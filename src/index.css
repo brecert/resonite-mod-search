@@ -17,3 +17,10 @@ main {
     width: 100%;
   }
 }
+
+a.icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: inherit;
+}
