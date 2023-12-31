@@ -1,7 +1,8 @@
 import "./ModInfo.css";
 
-import { Component, For } from "solid-js";
+import { Component, For, Show } from "solid-js";
 import { Author, Mod } from "../manifest/schema";
+import { Outline } from "../icons";
 
 export interface AuthorInfo {
   name: string;
@@ -19,7 +20,9 @@ export const ModInfo: Component<ModInfo> = (mod) => {
     <>
       <article class="ModInfo canvas">
         <header>
-          <h2><a href={`/mod/${mod.namespace}`}>{mod.info.name}</a></h2>
+          <h2>
+            <a href={`/mod/${mod.namespace}`}>{mod.info.name}</a>
+          </h2>
           <span class="author">
             by{" "}
             <For each={mod.authors}>
@@ -29,6 +32,13 @@ export const ModInfo: Component<ModInfo> = (mod) => {
           <span class="category">{mod.info.category}</span>
         </header>
         <p>{mod.info.description}</p>
+        <footer class="links">
+          <Show when={mod.info.sourceLocation != null}>
+            <a href={mod.info.sourceLocation} class="icon">
+              <Outline.Code width="1em" height="1em" /> Source
+            </a>
+          </Show>
+        </footer>
       </article>
     </>
   );

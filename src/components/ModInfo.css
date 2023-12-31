@@ -23,4 +23,11 @@
       color: #aaa;
     }
   }
+
+  .links {
+    color: #b0bac5;
+    a {
+      color: inherit;
+    }
+  }
 }
