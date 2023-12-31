@@ -1,0 +1,26 @@
+.ModInfo {
+  contain: content;
+
+  p {
+    color: #fefefe;
+  }
+
+  .category {
+    float: right;
+    color: #999;
+  }
+
+  h2 {
+    display: inline;
+  }
+
+  .author {
+    font-size: 0.8rem;
+    margin-left: 4px;
+    color: #aaa;
+
+    a {
+      color: #aaa;
+    }
+  }
+}

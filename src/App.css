@@ -1,0 +1,11 @@
+.App {
+  display: flex;
+  max-width: 720px;
+  margin: auto;
+}
+
+.ModList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
