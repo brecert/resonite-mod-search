@@ -1,5 +1,7 @@
 .Root {
   display: flex;
+  flex-direction: column;
+  gap: 18px;
   max-width: 720px;
   margin: auto;
 }
