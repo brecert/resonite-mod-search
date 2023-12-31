@@ -1,8 +1,8 @@
-import "./App.css";
-import manifest from "./assets/manifest.json";
+import "./root.css";
+import manifest from "../assets/manifest.json";
 
-import { For } from "solid-js";
-import { ModInfo } from "./components/ModInfo";
+import { Component, For } from "solid-js";
+import { ModInfo } from "../components/ModInfo";
 
 const mods = Object.values(manifest.objects).flatMap((object) => {
   const authors = Object.entries(object.author).map(([name, info]) => ({
@@ -16,16 +16,14 @@ const mods = Object.values(manifest.objects).flatMap((object) => {
   }));
 });
 
-function App() {
+export const Root: Component = () => {
   return (
     <>
-      <div class="App">
+      <div class="Root">
         <div class="ModList">
           <For each={mods}>{(mod) => <ModInfo {...mod} />}</For>
         </div>
       </div>
     </>
   );
-}
-
-export default App;
+};

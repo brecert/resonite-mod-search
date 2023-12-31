@@ -14,21 +14,21 @@ export interface ModInfo {
   info: Mod;
 }
 
-export const ModInfo: Component<ModInfo> = (props) => {
+export const ModInfo: Component<ModInfo> = (mod) => {
   return (
     <>
       <article class="ModInfo canvas">
         <header>
-          <h2>{props.info.name}</h2>
+          <h2><a href={`/mod/${mod.namespace}`}>{mod.info.name}</a></h2>
           <span class="author">
             by{" "}
-            <For each={props.authors}>
+            <For each={mod.authors}>
               {(author) => <a href={author.info.url}>{author.name}</a>}
             </For>
           </span>
-          <span class="category">{props.info.category}</span>
+          <span class="category">{mod.info.category}</span>
         </header>
-        <p>{props.info.description}</p>
+        <p>{mod.info.description}</p>
       </article>
     </>
   );

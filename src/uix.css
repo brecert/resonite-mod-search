@@ -12,10 +12,6 @@ input {
   border: 2px solid gray;
 }
 
-h1 {
-  margin-block-start: 0;
-}
-
 .text {
   color: #fff;
 }
@@ -24,7 +20,7 @@ h1 {
   color: #fff;
   background-color: rgb(50, 53, 62);
   border-radius: 6px;
-  padding: 6px;
+  padding: 12px;
 
   a:link {
     color: rgb(140, 134, 255);
@@ -32,5 +28,9 @@ h1 {
 
   a:visited {
     color: rgb(255, 134, 229);
+  }
+
+  .canvas {
+    background-color: rgb(36, 40, 53);
   }
 }
