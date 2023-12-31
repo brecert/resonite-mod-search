@@ -13,7 +13,7 @@ const root = document.getElementById("root");
 
 render(
   () => (
-    <Router>
+    <Router preload={false}>
       <Route
         path="/mod/:namespace"
         component={Mod}
