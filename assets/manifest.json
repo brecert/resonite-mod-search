@@ -1,0 +1,1013 @@
+{
+    "objects": {
+        "ch.isota": {
+            "author": {
+                "isotach": {
+                    "icon": "https://storage.ko-fi.com/cdn/useruploads/d8c553e6-ee0a-4f86-b896-e1aee5261e17.png",
+                    "support": "https://ko-fi.com/isotach",
+                    "url": "https://github.com/isovel/"
+                }
+            },
+            "entries": {
+                "ch.isota.DynBoneWrangler": {
+                    "category": "Optimization",
+                    "description": "Stops DynamicBoneChain components from updating (locally) if your framerate is too low to properly simulate them.",
+                    "name": "DynBoneWrangler",
+                    "sourceLocation": "https://github.com/isovel/DynBoneWrangler",
+                    "versions": {
+                        "1.0.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "DynBoneWrangler.dll",
+                                    "sha256": "66e3df17d17d59ccae878950a9b0ddda7aac072737e5dc7628813c2868ec7385",
+                                    "url": "https://github.com/isovel/DynBoneWrangler/releases/download/v1.0.1/DynBoneWrangler.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/isovel/DynBoneWrangler/releases/tag/v1.0.1"
+                        }
+                    }
+                },
+                "ch.isota.ResonitePlatformSpoof": {
+                    "additionalAuthors": {
+                        "runtime": {}
+                    },
+                    "category": "Misc",
+                    "description": "Spoofs your platform when joining new sessions.",
+                    "name": "ResonitePlatformSpoof",
+                    "sourceLocation": "https://github.com/isovel/ResonitePlatformSpoof",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ResonitePlatformSpoof.dll",
+                                    "sha256": "842299ddc43c196e611c6e83eea8678cf322924e1709d38511d66dbcfed2f443",
+                                    "url": "https://github.com/isovel/ResonitePlatformSpoof/releases/download/v2.0.0/ResonitePlatformSpoof.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/isovel/ResonitePlatformSpoof/releases/tag/v2.0.0"
+                        }
+                    }
+                }
+            }
+        },
+        "com.example": {
+            "author": {
+                "ExampleAuthor": {
+                    "url": "https://github.com/resonite-modding-group"
+                }
+            },
+            "entries": {
+                "com.example.ExampleMod": {
+                    "category": "Template",
+                    "description": "Description of your mod",
+                    "name": "ExampleMod",
+                    "sourceLocation": "https://github.com/resonite-modding-group/ExampleMod",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+                                    "url": "https://github.com/resonite-modding-group/ExampleMod/releases/download/1.0.0/ExampleMod.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/resonite-modding-group/ExampleMod/releases/tag/1.0.0"
+                        }
+                    }
+                }
+            }
+        },
+        "com.resonitemodloader": {
+            "author": {
+                "Resonite Modding Group": {
+                    "icon": "https://avatars.githubusercontent.com/u/145755526?s=200&v=4",
+                    "url": "https://github.com/resonite-modding-group"
+                }
+            },
+            "entries": {
+                "com.resonitemodloader.ResoniteModLoader": {
+                    "category": "Plugins",
+                    "description": "A mod loader for Resonite",
+                    "name": "ResoniteModLoader",
+                    "sourceLocation": "https://github.com/resonite-modding-group/ResoniteModLoader/",
+                    "tags": [
+                        "modloader"
+                    ],
+                    "versions": {
+                        "2.4.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ResoniteModLoader.dll",
+                                    "sha256": "69c9c28faf22da4e356bc588c8bf3802d5f599455d41150ee3db38d9515146e8",
+                                    "url": "https://github.com/resonite-modding-group/ResoniteModLoader/releases/download/2.4.0/ResoniteModLoader.dll"
+                                }
+                            ],
+                            "dependencies": {
+                                "net.pardeike.harmony": {
+                                    "version": "^2.2.2"
+                                }
+                            },
+                            "releaseUrl": "https://github.com/resonite-modding-group/ResoniteModLoader/releases/tag/2.4.0"
+                        },
+                        "2.5.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ResoniteModLoader.dll",
+                                    "sha256": "fa69d3eca8789d4c4b5545c37cf0ae3c0b08647a560b81e7dea6cb80306292a3",
+                                    "url": "https://github.com/resonite-modding-group/ResoniteModLoader/releases/download/2.5.0/ResoniteModLoader.dll"
+                                }
+                            ],
+                            "dependencies": {
+                                "net.pardeike.harmony": {
+                                    "version": "^2.2.2"
+                                }
+                            },
+                            "releaseUrl": "https://github.com/resonite-modding-group/ResoniteModLoader/releases/tag/2.5.0"
+                        },
+                        "2.5.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "ResoniteModLoader.dll",
+                                    "sha256": "ee2272282e4b425cf914d3900bca6d4e64f9a6aa408d1e5d677c62a547d58de9",
+                                    "url": "https://github.com/resonite-modding-group/ResoniteModLoader/releases/download/2.5.1/ResoniteModLoader.dll"
+                                }
+                            ],
+                            "dependencies": {
+                                "net.pardeike.harmony": {
+                                    "version": "^2.2.2"
+                                }
+                            },
+                            "releaseUrl": "https://github.com/resonite-modding-group/ResoniteModLoader/releases/tag/2.5.1"
+                        }
+                    }
+                }
+            }
+        },
+        "me.art0007i": {
+            "author": {
+                "art0007i": {
+                    "support": "https://ko-fi.com/art0007i",
+                    "url": "https://github.com/art0007i"
+                }
+            },
+            "entries": {
+                "me.art0007i.CapturePrivateUI": {
+                    "category": "Misc",
+                    "description": "Allows finger photos or cameras with a specific tag to render private UI",
+                    "name": "CapturePrivateUI",
+                    "sourceLocation": "https://github.com/art0007i/CapturePrivateUI",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "CapturePrivateUI.dll",
+                                    "sha256": "ec717dbcc891922e517f2b879c4600605a8207d403b1bde82dcec5c3470717e6",
+                                    "url": "https://github.com/art0007i/CapturePrivateUI/releases/download/2.0.0/CapturePrivateUI.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/CapturePrivateUI/releases/tag/2.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.ColorDrop": {
+                    "category": "Inspectors",
+                    "description": "Allows you to grab and drop colors in inspectors, similar to how you can grab numbers",
+                    "name": "ColorDrop",
+                    "sourceLocation": "https://github.com/art0007i/ColorDrop",
+                    "versions": {
+                        "2.1.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ColorDrop.dll",
+                                    "sha256": "d4f0e4b7ded4056fbee7ab94819bbd8a2a5ea2e60eb6680817f5476cced6688d",
+                                    "url": "https://github.com/art0007i/ColorDrop/releases/download/2.1.0/ColorDrop.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/ColorDrop/releases/tag/2.1.0"
+                        }
+                    }
+                },
+                "me.art0007i.ConsistentDashboard": {
+                    "category": "Dashboard",
+                    "description": "Makes it so the dashboard is always the same resolution in vr and in desktop",
+                    "name": "ConsistentDashboard",
+                    "sourceLocation": "https://github.com/art0007i/ConsistentDashboard",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ConsistentDashboard.dll",
+                                    "sha256": "de5da20205cc93590398f2895888039f37fb6d47003c97930fb7ab7befaccc65",
+                                    "url": "https://github.com/art0007i/ConsistentDashboard/releases/download/1.0.0/ConsistentDashboard.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/ConsistentDashboard/releases/tag/1.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.CreateWorldConfig": {
+                    "category": "Technical Tweaks",
+                    "description": "Adds the world configuration and world permission dialog to the `create new > editors` menu",
+                    "name": "CreateWorldConfig",
+                    "sourceLocation": "https://github.com/art0007i/CreateWorldConfig",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "CreateWorldConfig.dll",
+                                    "sha256": "7c9a9c5fc2a1c59b136704ec3a1dc650d1c0f36bea6b65bcd1c1c0fa7e6de7cb",
+                                    "url": "https://github.com/art0007i/CreateWorldConfig/releases/download/2.0.0/CreateWorldConfig.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/CreateWorldConfig/releases/tag/2.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.CustomInspectors": {
+                    "category": "Inspectors",
+                    "description": "Allows you to use custom inspector panels by saving them and favoriting them in your inventory",
+                    "name": "CustomInspectors",
+                    "sourceLocation": "https://github.com/art0007i/CustomInspectors",
+                    "versions": {
+                        "2.1.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "CustomInspectors.dll",
+                                    "sha256": "3c65cec215ef380f2cfa63c57daf123dcce68aee4c0e104953e7e2b7721985e4",
+                                    "url": "https://github.com/art0007i/CustomInspectors/releases/download/2.1.1/CustomInspectors.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/CustomInspectors/releases/tag/2.1.1"
+                        }
+                    }
+                },
+                "me.art0007i.CustomJoinVerifierFix": {
+                    "category": "Bug Workaround",
+                    "description": "Allows you to enable the custom join verifier when you have admin permissions, instead of only the host",
+                    "name": "CustomJoinVerifierFix",
+                    "sourceLocation": "https://github.com/art0007i/CustomJoinVerifierFix",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "CustomJoinVerifierFix.dll",
+                                    "sha256": "abca5e97d9bae4ad50ebf2dfd25675072756022cf4295d9e0f0ee05f6208b0cd",
+                                    "url": "https://github.com/art0007i/CustomJoinVerifierFix/releases/download/1.0.0/CustomJoinVerifierFix.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/CustomJoinVerifierFix/releases/tag/1.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.CustomUILib": {
+                    "category": "Libraries",
+                    "description": "Allows easily adding custom inspector ui to components which don't have any by default",
+                    "name": "CustomUILib",
+                    "sourceLocation": "https://github.com/art0007i/CustomUILib",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "CustomUILib.dll",
+                                    "sha256": "2d87f49ed6b1124119785f7d5d138cc3c4322486953894ec317ef9233706cb3c",
+                                    "url": "https://github.com/art0007i/CustomUILib/releases/download/2.0.0/CustomUILib.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/CustomUILib/releases/tag/2.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.DefaultToolOverride": {
+                    "category": "Controls",
+                    "description": "Gives you full control over the desktop number row tool keybinds",
+                    "name": "DefaultToolOverride",
+                    "sourceLocation": "https://github.com/art0007i/DefaultToolOverride",
+                    "versions": {
+                        "1.0.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "DefaultToolOverride.dll",
+                                    "sha256": "9913af124aa5719b7ec8fcb339e7e192dae154213b64e1cc446ee98fb5aa6bcf",
+                                    "url": "https://github.com/art0007i/DefaultToolOverride/releases/download/1.0.1/DefaultToolOverride.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/DefaultToolOverride/releases/tag/1.0.1"
+                        }
+                    }
+                },
+                "me.art0007i.DisableLegacyInventory": {
+                    "category": "Controls",
+                    "description": "Disables the legacy inventory gesture, but it has a config option that can enable it again",
+                    "name": "DisableLegacyInventory",
+                    "sourceLocation": "https://github.com/art0007i/DisableLegacyInventory",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "DisableLegacyInventory.dll",
+                                    "sha256": "84a5d0a9d5f031225f8cff9d7e18a3b12b196afb05b6c2b9f1fc0e2ddba45a87",
+                                    "url": "https://github.com/art0007i/DisableLegacyInventory/releases/download/2.0.0/DisableLegacyInventory.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/DisableLegacyInventory/releases/tag/2.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.ExtrasButtonTweaks": {
+                    "category": "Inspectors",
+                    "description": "Tweaks the extras button next to field names in inspectors",
+                    "name": "ExtrasButtonTweaks",
+                    "sourceLocation": "https://github.com/art0007i/ExtrasButtonTweaks",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ExtrasButtonTweaks.dll",
+                                    "sha256": "85880e8504bddde3c3aa5b9e84a7f1f6e747e5698a0d80d081d1314575e25978",
+                                    "url": "https://github.com/art0007i/ExtrasButtonTweaks/releases/download/1.0.0/ExtrasButtonTweaks.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/ExtrasButtonTweaks/releases/tag/1.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.FixGrabWorld": {
+                    "category": "Bug Workaround",
+                    "description": "Fixes the grab world locomotion moving you forwards each time you use it",
+                    "name": "FixGrabWorld",
+                    "sourceLocation": "https://github.com/art0007i/FixGrabWorld",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "FixGrabWorld.dll",
+                                    "sha256": "8822eb2ca3c0995deef692b92292a67485c27dd664bfd913bb83ba936504ff5d",
+                                    "url": "https://github.com/art0007i/FixGrabWorld/releases/download/2.0.0/FixGrabWorld.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/FixGrabWorld/releases/tag/2.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.ImportCompactor": {
+                    "category": "Asset Importing",
+                    "description": "Reduces the distance between imported items to a configurable value",
+                    "name": "ImportCompactor",
+                    "sourceLocation": "https://github.com/art0007i/ImportCompactor",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ImportCompactor.dll",
+                                    "sha256": "0154587705c1db03fe07ba866fc8c80af70fa72b2c3cacab96f03b854909570a",
+                                    "url": "https://github.com/art0007i/ImportCompactor/releases/download/2.0.0/ImportCompactor.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/ImportCompactor/releases/tag/2.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.InspectorScroll": {
+                    "category": "Controls",
+                    "description": "Allows scrolling inspectors (and other ui panels) using your thumbstick / touchpad",
+                    "name": "InspectorScroll",
+                    "sourceLocation": "https://github.com/art0007i/InspectorScroll",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "InspectorScroll.dll",
+                                    "sha256": "2dbcea4b00f4650c8b06a76d6dfd4636977329ab1e26239dd61187a03848eb24",
+                                    "url": "https://github.com/art0007i/InspectorScroll/releases/download/2.0.0/InspectorScroll.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/InspectorScroll/releases/tag/2.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.LocalStorage": {
+                    "category": "Misc",
+                    "description": "Allows you to store items locally on your hard drive",
+                    "name": "LocalStorage",
+                    "sourceLocation": "https://github.com/art0007i/LocalStorage",
+                    "versions": {
+                        "2.0.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "LocalStorage.dll",
+                                    "sha256": "c3cbd76e44ba9d45e5d8979ebe0caffe1cbdc14c6ddc43f722d59f5988c809ed",
+                                    "url": "https://github.com/art0007i/LocalStorage/releases/download/2.0.1/LocalStorage.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/LocalStorage/releases/tag/2.0.1"
+                        }
+                    }
+                },
+                "me.art0007i.NoHeadMenuDash": {
+                    "category": "Controls",
+                    "description": "Removes the gesture that opens the dash when you press the menu button near your head",
+                    "name": "NoHeadMenuDash",
+                    "sourceLocation": "https://github.com/art0007i/NoHeadMenuDash",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "NoHeadMenuDash.dll",
+                                    "sha256": "376e308a2c52c9d51c25f7ab39161a09cb0456059fe8eb389bd87e616ad8e83f",
+                                    "url": "https://github.com/art0007i/NoHeadMenuDash/releases/download/2.0.0/NoHeadMenuDash.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/NoHeadMenuDash/releases/tag/2.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.ParentalIssues": {
+                    "category": "Memes",
+                    "description": "Changes the default parent and child object names to be funnier",
+                    "name": "ParentalIssues",
+                    "sourceLocation": "https://github.com/art0007i/ParentalIssues",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ParentalIssues.dll",
+                                    "sha256": "2241fe6619880543be78d71894378250eba9b5a60147c9a95799869bbe7a129e",
+                                    "url": "https://github.com/art0007i/ParentalIssues/releases/download/2.0.0/ParentalIssues.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/ParentalIssues/releases/tag/2.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.PresenceToggle": {
+                    "category": "Misc",
+                    "description": "Allows you to toggle steam and discord rich presence",
+                    "name": "PresenceToggle",
+                    "sourceLocation": "https://github.com/art0007i/PresenceToggle",
+                    "versions": {
+                        "2.0.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "PresenceToggle.dll",
+                                    "sha256": "43f705e761a2c28e70cd443af0e1ad7dc46bde8b61eab3b39d55c9cea9e8f934",
+                                    "url": "https://github.com/art0007i/PresenceToggle/releases/download/2.0.1/PresenceToggle.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/PresenceToggle/releases/tag/2.0.1"
+                        }
+                    }
+                },
+                "me.art0007i.QuickFolderOpener": {
+                    "category": "Misc",
+                    "description": "Adds an option to your context menu which can open a folder without saving it",
+                    "name": "QuickFolderOpener",
+                    "sourceLocation": "https://github.com/art0007i/QuickFolderOpener",
+                    "versions": {
+                        "2.0.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "QuickFolderOpener.dll",
+                                    "sha256": "821ceeeeecd1a9e56c117e15f457f517e1e821666464a4d169e27c0be979f3f5",
+                                    "url": "https://github.com/art0007i/QuickFolderOpener/releases/download/2.0.1/QuickFolderOpener.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/QuickFolderOpener/releases/tag/2.0.1"
+                        }
+                    }
+                },
+                "me.art0007i.RemoveComponentAttacherRestriction": {
+                    "category": "Inspectors",
+                    "description": "Allows you to open a component attacher even if you don't have anything selected in an inspector panel",
+                    "name": "RemoveComponentAttacherRestriction",
+                    "sourceLocation": "https://github.com/art0007i/RemoveComponentAttacherRestriction",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "RemoveComponentAttacherRestriction.dll",
+                                    "sha256": "3a5c1139cca746bafc78d91f8aa0c588bf9435c2f3389a0fc16ec01ae31c12d0",
+                                    "url": "https://github.com/art0007i/RemoveComponentAttacherRestriction/releases/download/1.0.0/RemoveComponentAttacherRestriction.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/RemoveComponentAttacherRestriction/releases/tag/1.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.ShadowDistanceChanger": {
+                    "category": "Visual Tweaks",
+                    "description": "Allows changing the shadow distance using the mod's config",
+                    "name": "ShadowDistanceChanger",
+                    "sourceLocation": "https://github.com/art0007i/ShadowDistanceChanger",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ShadowDistanceChanger.dll",
+                                    "sha256": "b33c123e3f16c6f3f12183c975ec03f4e751ee1d12a1eaf171662a3419b5136f",
+                                    "url": "https://github.com/art0007i/ShadowDistanceChanger/releases/download/2.0.0/ShadowDistanceChanger.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/ShadowDistanceChanger/releases/tag/2.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.ShowComponentSlot": {
+                    "category": "Inspectors",
+                    "description": "Allows you to open the slot that a component is attached to in component inspectors",
+                    "name": "ShowComponentSlot",
+                    "sourceLocation": "https://github.com/art0007i/ShowComponentSlot",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ShowComponentSlot.dll",
+                                    "sha256": "3520caa2b3dffce36036371d25214f31da0516a9bd6061d0dec54734949738f2",
+                                    "url": "https://github.com/art0007i/ShowComponentSlot/releases/download/2.0.0/ShowComponentSlot.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/ShowComponentSlot/releases/tag/2.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.ShowDelegates": {
+                    "category": "Inspectors",
+                    "description": "Shows delegates and hidden items in the inspector panel",
+                    "name": "ShowDelegates",
+                    "sourceLocation": "https://github.com/art0007i/ShowDelegates",
+                    "versions": {
+                        "2.2.4": {
+                            "artifacts": [
+                                {
+                                    "filename": "ShowDelegates.dll",
+                                    "sha256": "b15f241bb31378077cf76c03f5cbdab6f882cad19d0738cc981c91e9be546aac",
+                                    "url": "https://github.com/art0007i/ShowDelegates/releases/download/2.2.4/ShowDelegates.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/ShowDelegates/releases/tag/2.2.4"
+                        }
+                    }
+                },
+                "me.art0007i.ShowDriveSource": {
+                    "category": "Inspectors",
+                    "description": "Allows you to see what is driving a field by simply clicking on the name of the field",
+                    "name": "ShowDriveSource",
+                    "sourceLocation": "https://github.com/art0007i/ShowDriveSource",
+                    "versions": {
+                        "2.0.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "ShowDriveSource.dll",
+                                    "sha256": "c47e5b88277cfa4c1d365d122cd2bf3adbffc05ddd97887e6842eb2f92540704",
+                                    "url": "https://github.com/art0007i/ShowDriveSource/releases/download/2.0.1/ShowDriveSource.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/ShowDriveSource/releases/tag/2.0.1"
+                        }
+                    }
+                },
+                "me.art0007i.SpecialItemsLib": {
+                    "category": "Libraries",
+                    "description": "Allows other mods to easily add custom special items to be shown in the inventory",
+                    "name": "SpecialItemsLib",
+                    "sourceLocation": "https://github.com/art0007i/SpecialItemsLib",
+                    "versions": {
+                        "2.0.2": {
+                            "artifacts": [
+                                {
+                                    "filename": "SpecialItemsLib.dll",
+                                    "sha256": "3a851acca48d4c562dfae4496fada17eb28f50544f372585f63bab30dc166b99",
+                                    "url": "https://github.com/art0007i/SpecialItemsLib/releases/download/2.0.2/SpecialItemsLib.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/SpecialItemsLib/releases/tag/2.0.2"
+                        }
+                    }
+                },
+                "me.art0007i.ToolshelfAnarchy": {
+                    "category": "Misc",
+                    "description": "Allows you to take and put tools on other peoples toolshelves",
+                    "name": "ToolshelfAnarchy",
+                    "sourceLocation": "https://github.com/art0007i/ToolshelfAnarchy",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ToolshelfAnarchy.dll",
+                                    "sha256": "f76d2a6a138c0ead9f70f35125c73e6085cb513fe85ffb7f01f54a15c3b522bb",
+                                    "url": "https://github.com/art0007i/ToolshelfAnarchy/releases/download/2.0.0/ToolshelfAnarchy.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/ToolshelfAnarchy/releases/tag/2.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.TrackerModelSwapper": {
+                    "category": "Visual Tweaks",
+                    "description": "Allows you to replace the vive tracker model used to visualize trackers",
+                    "name": "TrackerModelSwapper",
+                    "sourceLocation": "https://github.com/art0007i/TrackerModelSwapper",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "TrackerModelSwapper.dll",
+                                    "sha256": "9768a0be3b54c5d79351cbf7e0e237091eeac48038f44d079ea8006b344486ba",
+                                    "url": "https://github.com/art0007i/TrackerModelSwapper/releases/download/2.0.0/TrackerModelSwapper.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/TrackerModelSwapper/releases/tag/2.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.TransparentCameraEnabler": {
+                    "category": "Bug Workaround",
+                    "description": "Allows you to record transparent videos using OBS",
+                    "name": "TransparentCameraEnabler",
+                    "sourceLocation": "https://github.com/art0007i/TransparentCameraEnabler",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "TransparentCameraEnabler.dll",
+                                    "sha256": "ee9f60a8a9826a2a579c8c2fbd49346a55ffee089931f38bbb11dd90b899c052",
+                                    "url": "https://github.com/art0007i/TransparentCameraEnabler/releases/download/1.0.0/TransparentCameraEnabler.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/TransparentCameraEnabler/releases/tag/1.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.ValueProxyExtensions": {
+                    "category": "Technical Tweaks",
+                    "description": "Adds a few extra features to reference and value proxies",
+                    "name": "ValueProxyExtensions",
+                    "sourceLocation": "https://github.com/art0007i/ValueProxyExtensions",
+                    "versions": {
+                        "2.1.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ValueProxyExtensions.dll",
+                                    "sha256": "0e1efac55d36be410e7b2fb49cb0135f249b5dba3019b3e41821d0ff9f7cb26b",
+                                    "url": "https://github.com/art0007i/ValueProxyExtensions/releases/download/2.1.0/ValueProxyExtensions.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/ValueProxyExtensions/releases/tag/2.1.0"
+                        }
+                    }
+                },
+                "me.art0007i.\ud83c\udf40": {
+                    "category": "Memes",
+                    "description": "Makes you luckier",
+                    "name": "\ud83c\udf40",
+                    "sourceLocation": "https://github.com/art0007i/FourLeafClover",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "\ud83c\udf40.dll",
+                                    "sha256": "e18f11c954c2ad045d23cc2efa7c8e8f5589e90adead57bff35410ecc6baa43e",
+                                    "url": "https://github.com/art0007i/FourLeafClover/raw/be7320d48fffedbdd6b086111a3d26bab09c26c4/%F0%9F%8D%80.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/FourLeafClover/releases/tag/2.0.0"
+                        }
+                    }
+                }
+            }
+        },
+        "net.deltawolf": {
+            "author": {
+                "Delta": {
+                    "icon": "https://avatars.githubusercontent.com/u/7883807?v=4",
+                    "support": "https://www.patreon.com/_Delta",
+                    "url": "https://github.com/XDelta/"
+                }
+            },
+            "entries": {
+                "net.deltawolf.ResoniteShowSourceLocation": {
+                    "category": "Inspectors",
+                    "description": "Allows seeing what is driving a field and where a component is located.",
+                    "name": "ShowSourceLocation",
+                    "sourceLocation": "https://github.com/XDelta/ResoniteShowSourceLocation",
+                    "versions": {
+                        "1.1.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "ResoniteShowSourceLocation.dll",
+                                    "sha256": "362d18bc3e5c75865ed86fb5dbfc7959fbf152f4d8fe05e39e66859af9f219ff",
+                                    "url": "https://github.com/XDelta/ResoniteShowSourceLocation/releases/download/1.1.1/ResoniteShowSourceLocation.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/XDelta/ResoniteShowSourceLocation/releases/tag/1.1.1"
+                        }
+                    }
+                },
+                "net.deltawolf.SettingsRedux": {
+                    "category": "Dashboard",
+                    "description": "Replaces the default Resonite Settings page with an enhanced settings page that adds in many QoL changes",
+                    "name": "SettingsRedux",
+                    "sourceLocation": "https://github.com/XDelta/SettingsRedux",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "SettingsRedux.dll",
+                                    "sha256": "c41298c54a0ae16ac723d3e616f502fa025f3fec02235f1da47c2b892dfbec21",
+                                    "url": "https://github.com/XDelta/SettingsRedux/releases/download/2.0.0/SettingsRedux.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/XDelta/SettingsRedux/releases/tag/2.0.0"
+                        },
+                        "2.1.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "SettingsRedux.dll",
+                                    "sha256": "6e1daebc4c16908505044709727715b7b5d09b3e86f8e7e6d5e03a053fe6cc70",
+                                    "url": "https://github.com/XDelta/SettingsRedux/releases/download/2.1.0/SettingsRedux.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/XDelta/SettingsRedux/releases/tag/2.1.0"
+                        }
+                    }
+                }
+            }
+        },
+        "net.pardeike": {
+            "author": {
+                "pardeike": {
+                    "icon": "https://avatars.githubusercontent.com/u/853584?v=4",
+                    "support": "https://www.patreon.com/pardeike",
+                    "url": "https://github.com/pardeike/"
+                }
+            },
+            "entries": {
+                "net.pardeike.harmony": {
+                    "category": "Libraries",
+                    "description": "A library for patching, replacing and decorating .NET and Mono methods during runtime.",
+                    "name": "Harmony",
+                    "sourceLocation": "https://github.com/pardeike/Harmony",
+                    "versions": {
+                        "2.2.2": {
+                            "artifacts": [
+                                {
+                                    "filename": "0Harmony.dll",
+                                    "installLocation": "/rml_libs",
+                                    "sha256": "d04ec5b2590dd1bbb57f0f11dc417b1a5bebbb36b1f97006d35f2d87c3a2a69f",
+                                    "url": "https://github.com/resonite-modding-group/ResoniteModLoader/releases/download/2.5.1/0Harmony.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/pardeike/Harmony/releases/tag/v2.2.2.0"
+                        }
+                    },
+                    "website": "https://harmony.pardeike.net/"
+                }
+            }
+        },
+        "net.raidriar796": {
+            "author": {
+                "Raidriar796": {
+                    "url": "https://github.com/Raidriar796"
+                }
+            },
+            "entries": {
+                "net.raidriar796.NoSteamScreenshots": {
+                    "category": "Technical Tweaks",
+                    "description": "Prevents in app photos from additionally being saved to Steam.",
+                    "name": "NoSteamScreenshots",
+                    "sourceLocation": "https://github.com/Raidriar796/NoSteamScreenshots",
+                    "versions": {
+                        "1.0.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "NoSteamScreenshots.dll",
+                                    "sha256": "8D9F335ECD39AD245838215B47334825E8F96A8A1464545A1404FFE5C8A345D7",
+                                    "url": "https://github.com/Raidriar796/NoSteamScreenshots/releases/download/1.0.1/NoSteamScreenshots.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Raidriar796/NoSteamScreenshots/releases/tag/1.0.1"
+                        }
+                    }
+                },
+                "net.raidriar796.ResoniteIkCulling": {
+                    "category": "Optimization",
+                    "description": "Disables the IK of Users who are behind you or far away. Includes optional IK throttling.",
+                    "name": "ResoniteIkCulling",
+                    "sourceLocation": "https://github.com/Raidriar796/ResoniteIkCulling",
+                    "versions": {
+                        "2.5.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ResoniteIKCulling.dll",
+                                    "sha256": "F302E36B1E5EF41FD518F03D69C157B763F2127149DD0095A3DF61D9EB0E1E2C",
+                                    "url": "https://github.com/Raidriar796/ResoniteIkCulling/releases/download/2.5.0/ResoniteIKCulling.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Raidriar796/ResoniteIkCulling/releases/tag/2.5.0"
+                        }
+                    }
+                },
+                "net.raidriar796.StresslessHeadless": {
+                    "category": "Technical Tweaks",
+                    "description": "Reduces strain on Headless clients by disabling frequent and heavy calculations.",
+                    "name": "StresslessHeadless",
+                    "platforms": [
+                        "headless"
+                    ],
+                    "sourceLocation": "https://github.com/Raidriar796/StresslessHeadless",
+                    "versions": {
+                        "1.1.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "StresslessHeadless.dll",
+                                    "sha256": "5F8C97CD506AF6C788DF03FE2CDE174A379FEBC0570FABCA3434172A38B3988D",
+                                    "url": "https://github.com/Raidriar796/StresslessHeadless/releases/download/1.1.0/StresslessHeadless.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Raidriar796/StresslessHeadless/releases/tag/1.1.0"
+                        }
+                    }
+                },
+                "net.raidriar796.yt-dlp-Updater": {
+                    "category": "Misc",
+                    "description": "Runs the built in update function for yt-dlp on startup, includes option to change the update branch.",
+                    "name": "yt-dlp Updater",
+                    "sourceLocation": "https://github.com/Raidriar796/yt-dlp-Updater",
+                    "versions": {
+                        "1.1.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ytdlpUpdater.dll",
+                                    "sha256": "9B6AEE2D1DBEC0A80DA7CEBD90EC208254B64D3F8B00BCA76234CC10098F4CB5",
+                                    "url": "https://github.com/Raidriar796/yt-dlp-Updater/releases/download/1.1.0/ytdlpUpdater.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Raidriar796/yt-dlp-Updater/releases/tag/1.1.0"
+                        }
+                    }
+                }
+            }
+        },
+        "ninja.badhalo": {
+            "author": {
+                "badhaloninja": {
+                    "icon": "https://stuff.badhalo.ninja/icon/animated/webp/icon.webp",
+                    "support": "https://ko-fi.com/badhaloninja",
+                    "url": "https://github.com/badhaloninja",
+                    "website": "https://badhalo.ninja/"
+                }
+            },
+            "entries": {
+                "ninja.badhalo.ModSettings": {
+                    "category": "Dashboard",
+                    "description": "Adds a dash screen to show mods and edit their configs",
+                    "name": "ResoniteModSettings",
+                    "sourceLocation": "https://github.com/badhaloninja/ResoniteModSettings",
+                    "versions": {
+                        "2.1.3": {
+                            "artifacts": [
+                                {
+                                    "sha256": "d9a1773951301cdad47fa5ed1b4afd5bea33f994e2f7d8834a26eaf738a5a933",
+                                    "url": "https://github.com/badhaloninja/ResoniteModSettings/releases/download/v2.1.3/ResoniteModSettings.dll"
+                                }
+                            ],
+                            "changelog": "- Updated harmony ID to `ninja.badhalo.ModSettings`\n- Cleaned up build files",
+                            "releaseUrl": "https://github.com/badhaloninja/ResoniteModSettings/releases/tag/v2.1.3"
+                        }
+                    }
+                }
+            }
+        },
+        "owo.Nytra": {
+            "author": {
+                "Nytra": {
+                    "url": "https://github.com/Nytra"
+                }
+            },
+            "entries": {
+                "owo.Nytra / Rucio.HeadlessToolPermissionKickCrashFix": {
+                    "category": "Bug Workaround",
+                    "description": "A Headless Server mod that prevents tool permission kicks from causing a world crash.",
+                    "name": "HeadlessToolPermissionKickCrashFix",
+                    "platforms": [
+                        "headless"
+                    ],
+                    "sourceLocation": "https://github.com/Nytra/ResoniteHeadlessToolPermissionKickCrashFix",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "750102cdc126685956ed73ec47fc3f8509b97d2c6f601724a851ae4eab1908d2",
+                                    "url": "https://github.com/Nytra/ResoniteHeadlessToolPermissionKickCrashFix/releases/download/v1.0.0/HeadlessToolPermissionKickCrashFix.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteHeadlessToolPermissionKickCrashFix/releases/tag/v1.0.0"
+                        }
+                    }
+                },
+                "owo.Nytra.AccessibleFullBodyCalibrator": {
+                    "category": "Misc",
+                    "description": "Adds a button to the T-Pose Calibration step of the Full Body Calibrator to allow completing the step if you are unable to use two controllers.",
+                    "name": "AccessibleFullBodyCalibrator",
+                    "sourceLocation": "https://github.com/Nytra/ResoniteAccessibleFullBodyCalibrator",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "48a85d0daeeed8f853d9183c4a498dc9161a9eaa1dd4f8319bfe77d3112c33be",
+                                    "url": "https://github.com/Nytra/ResoniteAccessibleFullBodyCalibrator/releases/download/v1.0.0/AccessibleFullBodyCalibrator.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteAccessibleFullBodyCalibrator/releases/tag/v1.0.0"
+                        }
+                    }
+                },
+                "owo.Nytra.ComponentSearchWizard": {
+                    "category": "Wizards",
+                    "description": "Adds a wizard to allow searching for components that exist on slots in the current world. You can search by type and/or by name, and get a list of references as output.",
+                    "name": "ComponentSearchWizard",
+                    "sourceLocation": "https://github.com/Nytra/ResoniteComponentSearchWizard",
+                    "versions": {
+                        "1.1.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "ab12c58541abc87e8541f00955d0297feaa668454a69d39330dfcafc22338333",
+                                    "url": "https://github.com/Nytra/ResoniteComponentSearchWizard/releases/download/v1.1.0/ComponentSearchWizard.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteComponentSearchWizard/releases/tag/v1.1.0"
+                        }
+                    }
+                },
+                "owo.Nytra.FixSessionBrowser": {
+                    "category": "Bug Workaround",
+                    "description": "A mod that fixes the session browser. It is a workaround for a few bugs that have not been officially fixed yet.",
+                    "name": "FixSessionBrowser",
+                    "sourceLocation": "https://github.com/Nytra/ResoniteFixSessionBrowser",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "9ecb1fda212a58ce9962ddd28cbbee8bae4a8663ebca81a48a2ea505255f5426",
+                                    "url": "https://github.com/Nytra/ResoniteFixSessionBrowser/releases/download/v1.0.0/FixSessionBrowser.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteFixSessionBrowser/releases/tag/v1.0.0"
+                        },
+                        "1.1.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "d00605ec3083d53a0dfb37aa8148c0ebb598cb853e12b55571bcf19529de7145",
+                                    "url": "https://github.com/Nytra/ResoniteFixSessionBrowser/releases/download/v1.1.0/FixSessionBrowser.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteFixSessionBrowser/releases/tag/v1.1.0"
+                        }
+                    }
+                },
+                "owo.Nytra.LogFlush": {
+                    "category": "Technical Tweaks",
+                    "description": "A mod primarily for developers that flushes the log stream when you press the F1 key, causing all buffered messages to be written to the log file.",
+                    "name": "LogFlush",
+                    "sourceLocation": "https://github.com/Nytra/ResoniteLogFlush",
+                    "versions": {
+                        "1.1.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "4fb820f1d28b1f1b329519e51ed4be5438655d1cc05bcdd655e75607fc46ba79",
+                                    "url": "https://github.com/Nytra/ResoniteLogFlush/releases/download/v1.1.0/LogFlush.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteLogFlush/releases/tag/v1.1.0"
+                        }
+                    }
+                },
+                "owo.Nytra.WorldListSessionHider": {
+                    "category": "Dashboard",
+                    "description": "A mod that hides session info and thumbnails in your session browser based on the host's userID/username or the sessionID.",
+                    "name": "WorldListSessionHider",
+                    "sourceLocation": "https://github.com/Nytra/ResoniteWorldListSessionHider",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "6890584a1264d378fe3c21521ce50fd570452bb6edeac05a4702dbda701d10dd",
+                                    "url": "https://github.com/Nytra/ResoniteWorldListSessionHider/releases/download/v1.0.0/WorldListSessionHider.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteWorldListSessionHider/releases/tag/v1.0.0"
+                        },
+                        "1.1.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "7742aa17676d20e4aaace4eef66f2f961a37b7b2eb30f4e9edeb5c002015f958",
+                                    "url": "https://github.com/Nytra/ResoniteWorldListSessionHider/releases/download/v1.1.0/WorldListSessionHider.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteWorldListSessionHider/releases/tag/v1.1.0"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "schemaVersion": "1.0.1"
+}
