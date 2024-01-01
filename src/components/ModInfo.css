@@ -1,27 +1,34 @@
 .ModInfo {
   contain: content;
 
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+  }
+
   p {
     color: #fefefe;
   }
 
-  .category {
-    float: right;
-    color: #999;
-  }
-
   h2 {
-    display: inline;
+    margin: 0;
   }
 
   .author {
     font-size: 0.8rem;
     margin-left: 4px;
     color: #aaa;
+    flex: 1;
+    white-space: nowrap;
 
     a {
       color: #aaa;
     }
+  }
+
+  .category {
+    color: #999;
   }
 
   .links {
@@ -29,5 +36,11 @@
     a {
       color: inherit;
     }
+  }
+}
+
+@media (max-width: 512px) {
+  .ModInfo h2 {
+    width: 100%;
   }
 }
