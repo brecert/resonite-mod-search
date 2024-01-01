@@ -8,7 +8,7 @@ import { ModMeta } from "../../components/ModMeta";
 import { AuthorInfo } from "../../components/AuthorInfo";
 
 function getModInfo(namespace: string) {
-  return mods.find((mod) => mod.namespace === namespace);
+  return mods.find((mod) => encodeURIComponent(mod.namespace) === namespace);
 }
 
 export const Mod: Component = () => {

@@ -21,7 +21,9 @@ export const ModInfo: Component<ModInfo> = (mod) => {
       <article class="ModInfo canvas">
         <header>
           <h2>
-            <a href={`/mod/${mod.namespace}`}>{mod.info.name}</a>
+            <a href={`/mod/${encodeURIComponent(mod.namespace)}`}>
+              {mod.info.name}
+            </a>
           </h2>
           <span class="author">
             by{" "}

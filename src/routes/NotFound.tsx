@@ -8,7 +8,7 @@ export const NotFound: Component = () => {
     <div class="NotFound">
       <Router>
         <Route
-          path="/mod/:namespace"
+          path="/mod/*namespace"
           component={() => <h1>404 : Mod Not Found</h1>}
         />
         <Route path="*" component={() => <h1>404 : Not Found</h1>} />
