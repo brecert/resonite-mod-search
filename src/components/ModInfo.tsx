@@ -1,6 +1,6 @@
 import "./ModInfo.css";
 
-import { Component, For, Show } from "solid-js";
+import { Component, For, Show, createMemo } from "solid-js";
 import { Author, Mod } from "../manifest/schema";
 import { Outline } from "../icons";
 
@@ -15,6 +15,27 @@ export interface ModInfo {
   info: Mod;
 }
 
+export const CleanBreak: Component<{ text: string }> = (props) => {
+  const parts = createMemo(() =>
+    Array.from(
+      props.text.matchAll(/\p{Uppercase}*[^\p{Uppercase}]*/gu),
+      (item) => item
+    )
+  );
+  return (
+    <>
+      <For each={parts()}>
+        {([text]) => (
+          <>
+            <wbr />
+            {text}
+          </>
+        )}
+      </For>
+    </>
+  );
+};
+
 export const ModInfo: Component<ModInfo> = (mod) => {
   return (
     <>
@@ -22,7 +43,7 @@ export const ModInfo: Component<ModInfo> = (mod) => {
         <header>
           <h2>
             <a href={`/mod/${encodeURIComponent(mod.namespace)}`}>
-              {mod.info.name}
+              <CleanBreak text={mod.info.name} />
             </a>
           </h2>
           <span class="author">
