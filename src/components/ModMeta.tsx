@@ -26,6 +26,10 @@ export const ModMeta: Component<ModInfo> = (mod) => {
                       </dd>
                       <dt>sha256</dt>
                       <dd>{artifact.sha256}</dd>
+                      <Show when={artifact.installLocation != null}>
+                        <dt>install location</dt>
+                        <dd>{artifact.installLocation}</dd>
+                      </Show>
                     </dl>
                   )}
                 </For>
