@@ -1,8 +1,11 @@
 import "./AuthorInfo.css";
 
 import { Component, For, Show } from "solid-js";
-import { Outline, Solid } from "../icons";
+import { Outline } from "../icons";
 import * as ModInfo from "./ModInfo";
+
+const proxyURL = (url: string) =>
+  `https://proxy.bree.workers.dev/proxy?url=${encodeURIComponent(url)}`;
 
 export const AuthorInfo: Component<{ authors: ModInfo.AuthorInfo[] }> = (
   props
@@ -19,7 +22,7 @@ export const AuthorInfo: Component<{ authors: ModInfo.AuthorInfo[] }> = (
               <article class="author canvas">
                 <Show when={author.info.icon}>
                   <img
-                    src={`https://proxy.bree.workers.dev/proxy?url=${encodeURIComponent(author.info.icon!)}`}
+                    src={proxyURL(author.info.icon!)}
                     width="48px"
                     height="48px"
                     class="avatar"
