@@ -1,5 +1,5 @@
 import "./[id].css";
-import { Component } from "solid-js";
+import { Component, createMemo } from "solid-js";
 import { useParams } from "@solidjs/router";
 
 import { mods } from "../data";
@@ -12,13 +12,13 @@ function getModInfo(namespace: string) {
 }
 
 export const Mod: Component = () => {
-  const { namespace } = useParams();
-  const modInfo = getModInfo(namespace)!;
+  const params = useParams();
+  const modInfo = createMemo(() => getModInfo(params.namespace)!);
   return (
     <div class="Mod">
-      <ModInfo {...modInfo} />
-      <AuthorInfo authors={modInfo.authors} />
-      <ModMeta {...modInfo} />
+      <ModInfo {...modInfo()} />
+      <AuthorInfo authors={modInfo().authors} />
+      <ModMeta {...modInfo()} />
     </div>
   );
 };

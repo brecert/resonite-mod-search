@@ -15,14 +15,14 @@ const root = document.getElementById("root");
 render(
   () => (
     <Router preload={false}>
-      <Route path="/" component={Root} />
       <Route
-        path="/mod/*namespace"
+        path="/mod/:namespace"
         component={Mod}
         matchFilters={{
           namespace: mods.map((mod) => encodeURIComponent(mod.namespace)),
         }}
       />
+      <Route path="/" component={Root} />
       <Route path="*" component={NotFound} />
     </Router>
   ),

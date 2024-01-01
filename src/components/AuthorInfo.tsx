@@ -10,13 +10,11 @@ const proxyURL = (url: string) =>
 export const AuthorInfo: Component<{ authors: ModInfo.AuthorInfo[] }> = (
   props
 ) => {
-  const authors = props.authors;
-
   return (
     <>
       <article class="AuthorInfo canvas">
         <h2>Authors</h2>
-        <For each={authors}>
+        <For each={props.authors}>
           {(author) => (
             <>
               <article class="author canvas">
