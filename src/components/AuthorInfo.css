@@ -1,3 +1,4 @@
+/* todo: switch to non-grid layout for better uix mirror */
 .AuthorInfo {
   display: flex;
   flex-direction: column;

@@ -4,7 +4,7 @@
   header {
     display: flex;
     flex-wrap: wrap;
-    place-items: center;
+    place-items: baseline;
   }
 
   p {
@@ -46,6 +46,7 @@
 
   .category {
     color: #999;
+    align-self: center;
   }
 
   .links {
