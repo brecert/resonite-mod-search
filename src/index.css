@@ -24,3 +24,34 @@ a.icon {
   gap: 4px;
   color: inherit;
 }
+
+.aria-tooltip {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: attr(aria-label);
+
+    color: #ffffff;
+    background: #24252f;
+
+    pointer-events: none;
+    border-radius: 4px;
+
+    padding: 0.5ch 0.5ch;
+
+    z-index: 100;
+
+    visibility: collapse;
+  }
+
+  &:hover::after {
+    visibility: visible;
+  }
+
+  &.tip\:\^\<::after {
+    margin-block-end: 3px;
+    inset-block-end: 100%;
+    inset-inline-end: 0;
+  }
+}

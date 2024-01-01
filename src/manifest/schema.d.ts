@@ -1,5 +1,39 @@
 export type uri = string;
 
+export type Category =
+  | 'Asset Importing'
+  | 'Audio'
+  | 'Bug Workaround'
+  | 'Context Menu'
+  | 'Controls'
+  | 'Dashboard'
+  | 'Hardware Integration'
+  | 'Inspectors'
+  | 'Libraries'
+  | 'Memes'
+  | 'Misc'
+  | 'Optimization'
+  | 'Plugins'
+  | 'Protoflux'
+  | 'Technical Tweaks'
+  | 'Template'
+  | 'Visual Tweaks'
+  | 'Wizards'
+
+export type Platform =
+  | 'android'
+  | 'headless'
+  | 'linux'
+  | 'linux-native'
+  | 'linux-wine'
+  | 'windows'
+  | 'other'
+
+export type Flag =
+  | 'deprecated'
+  | 'plugin'
+  | 'file'
+
 export interface Manifest {
   objects: { [namespace: string]: ManifestObject }
   schemaVersion: string
@@ -23,12 +57,12 @@ export interface AuthorSchema {
 
 export interface Mod {
   additionalAuthors?: string[];
-  category: string;
+  category: Category;
   description: string;
-  flags?: string[];
+  flags?: Flag[];
   id: string;
   name: string;
-  platforms?: string[];
+  platforms?: Platform[];
   sourceLocation?: string;
   tags?: string[];
   versions: Record<string, Version>;

@@ -15,18 +15,22 @@
     margin: 0;
   }
 
+  footer {
+    display: flex;
+    color: #888;
+
+    .links {
+      flex: 1;
+    }
+  }
+
   .authors {
     font-size: 0.8rem;
     margin-left: 4px;
-    color: #aaa;
     flex: 1;
     white-space: nowrap;
     display: flex;
     gap: 4px;
-
-    a {
-      color: #aaa;
-    }
 
     ul {
       display: flex;

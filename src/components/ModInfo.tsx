@@ -1,6 +1,6 @@
 import "./ModInfo.css";
 
-import { Component, For, Show, createMemo } from "solid-js";
+import { Component, For, Match, Show, Switch, createMemo } from "solid-js";
 import { Author, Mod } from "../manifest/schema";
 import { Outline } from "../icons";
 
@@ -61,17 +61,32 @@ export const ModInfo: Component<ModInfo> = (mod) => {
           <span class="category">{mod.info.category}</span>
         </header>
         <p>{mod.info.description}</p>
-        <footer class="links">
-          <Show when={mod.info.sourceLocation != null}>
-            <a href={mod.info.sourceLocation} class="icon">
-              <Outline.Code width="1em" height="1em" /> Source
-            </a>
-          </Show>
-          <Show when={mod.info.website}>
-            <a href={mod.info.website} class="icon">
-              <Outline.GlobeAlt width="1em" height="1em" /> Website
-            </a>
-          </Show>
+        <footer>
+          <div class="links">
+            <Show when={mod.info.sourceLocation != null}>
+              <a href={mod.info.sourceLocation} class="icon">
+                <Outline.Code width="1em" height="1em" /> Source
+              </a>
+            </Show>
+            <Show when={mod.info.website}>
+              <a href={mod.info.website} class="icon">
+                <Outline.GlobeAlt width="1em" height="1em" /> Website
+              </a>
+            </Show>
+          </div>
+          <div class="platforms">
+            <For each={mod.info.platforms}>
+              {(platform) => (
+                <Switch fallback={platform}>
+                  <Match when={platform == "headless"}>
+                    <span class="aria-tooltip tip:^<" aria-label="headless">
+                      <Outline.Server width="1em" height="1em" aria-hidden="true" />
+                    </span>
+                  </Match>
+                </Switch>
+              )}
+            </For>
+          </div>
         </footer>
       </article>
     </>
