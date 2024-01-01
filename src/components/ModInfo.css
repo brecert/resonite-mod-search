@@ -46,6 +46,8 @@
 
   .links {
     color: #b0bac5;
+    display: flex;
+    gap: 6px;
     a {
       color: inherit;
     }

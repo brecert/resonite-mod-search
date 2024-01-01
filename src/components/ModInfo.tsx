@@ -67,6 +67,11 @@ export const ModInfo: Component<ModInfo> = (mod) => {
               <Outline.Code width="1em" height="1em" /> Source
             </a>
           </Show>
+          <Show when={mod.info.website}>
+            <a href={mod.info.website} class="icon">
+              <Outline.GlobeAlt width="1em" height="1em" /> Website
+            </a>
+          </Show>
         </footer>
       </article>
     </>
