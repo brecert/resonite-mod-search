@@ -46,11 +46,17 @@ export const ModInfo: Component<ModInfo> = (mod) => {
               <CleanBreak text={mod.info.name} />
             </a>
           </h2>
-          <span class="author">
+          <span class="authors">
             by{" "}
-            <For each={mod.authors}>
-              {(author) => <a href={author.info.url}>{author.name}</a>}
-            </For>
+            <ul>
+              <For each={mod.authors}>
+                {(author) => (
+                  <li>
+                    <a href={author.info.url}>{author.name}</a>
+                  </li>
+                )}
+              </For>
+            </ul>
           </span>
           <span class="category">{mod.info.category}</span>
         </header>
