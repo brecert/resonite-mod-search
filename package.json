@@ -22,7 +22,6 @@
   },
   "postcss": {
     "plugins": {
-      "postcss-nesting": {}
     }
   }
 }

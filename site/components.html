@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Components</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body class="Root panel vertical-layout">
+		<article class="ModInfo canvas">
+			<header class="horizontal-layout">
+				<h2><a href="#">Example Mod</a></h2>
+				<div class="authors horizontal-layout">
+					by
+					<ul class="horizontal-layout join">
+						<li><a href="#">ExampleAuthor</a></li>
+						<li><a href="#">ExampleAuthor</a></li>
+					</ul>
+				</div>
+				<span class="category muted">Category</span>
+			</header>
+			<main>
+				<p>Description of your mod</p>
+			</main>
+			<footer class="horizontal-layout muted">
+				<ul class="links horizontal-layout">
+					<li><a href="#">Source</a></li>
+					<li><a href="#">Website</a></li>
+				</ul>
+				<ul class="tags horizontal-layout join">
+					<li>tag</li>
+					<li>tag</li>
+					<li>tag</li>
+				</ul>
+				<ul class="platforms horizontal-layout join">
+					<li>linux</li>
+					<li>headless</li>
+				</ul>
+			</footer>
+		</article>
+		<article class="AuthorsInfo canvas vertical-layout">
+			<header>
+				<h2 class="canvas-title">Authors</h2>
+			</header>
+			<main role="list">
+				<article class="AuthorInfo canvas" role="listitem">
+					<img
+						class="avatar"
+						width="40px"
+						height="40px"
+						src="https://proxy.bree.workers.dev/proxy?url=https%3A%2F%2Fstorage.ko-fi.com%2Fcdn%2Fuseruploads%2Fd8c553e6-ee0a-4f86-b896-e1aee5261e17.png"
+						aria-hidden="true"
+					/>
+					<header><h3>isotach</h3></header>
+					<main>
+						<li class="links vertical-layout">
+							<a href="#">isotach</a>
+							<a href="#">Support</a>
+							<a href="#">Website</a>
+						</li>
+					</main>
+				</article>
+			</main>
+		</article>
+
+		<article class="VersionsInfo canvas vertical-layout">
+			<header><h2>Versions</h2></header>
+			<main>
+				<ul class="vertical-layout">
+					<li>
+						<article class="VersionInfo canvas vertical-layout">
+							<header class="horizontal-layout">
+								<h3>1.0.0</h3>
+								<a href="#" class="release muted">Release Page</a>
+							</header>
+							<main>
+								<details class="artifacts" open>
+									<summary>Files</summary>
+									<ul class="vertical-layout">
+										<li>
+											<article class="ArtifactInfo canvas">
+												<header>
+													<h4 class="name"><a href="#">ModName.dll</a></h4>
+												</header>
+												<hr />
+												<main>
+													<dl class="grid-layout faded">
+														<dt>sha256</dt>
+														<dd>diawjdawonfaoinaiowe</dd>
+														<dt>path</dt>
+														<dd>/rml_mods</dd>
+													</dl>
+												</main>
+											</article>
+										</li>
+									</ul>
+								</details>
+								<!-- todo: reuse dependencies for conflicts, they should be similar. -->
+								<details class="dependencies" open>
+									<summary>Dependencies</summary>
+									<dl class="vertical-layout canvas">
+										<div class="dependency horizontal-layout">
+											<dt><a href="#">net.harmony</a></dt>
+											<dd>^2.0.0</dd>
+										</div>
+										<div class="dependency horizontal-layout">
+											<dt><a href="#">net.harmony</a></dt>
+											<dd>^2.0.0</dd>
+										</div>
+									</dl>
+								</details>
+							</main>
+						</article>
+					</li>
+				</ul>
+			</main>
+		</article>
+	</body>
+</html>
