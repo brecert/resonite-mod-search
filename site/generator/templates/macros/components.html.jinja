@@ -1,0 +1,163 @@
+{%- macro mod_info(mod) %}
+<article class="ModInfo canvas">
+	<header class="horizontal-layout">
+		<h2><a href="/mod/{{ mod.namespace|make_valid_path }}">{{ mod.name }}</a></h2>
+		<div class="authors horizontal-layout">
+			by
+			<ul class="horizontal-layout join">
+				{%- for name, author in mod.authors.items() %}
+				<li>
+					{%- if author.url -%}
+					<a href="{{ author.url }}">{{ name }}</a>
+					{%- else -%}
+					{{ name }}
+					{%- endif -%}
+				</li>
+				{%- endfor %}
+			</ul>
+		</div>
+		<span class="category muted">{{ mod.category }}</span>
+	</header>
+	<p>{{ mod.description }}</p>
+	<footer class="horizontal-layout muted">
+		<ul class="links horizontal-layout">
+			{% if mod.sourceLocation -%}
+			<li><a href="{{ mod.sourceLocation|urlencode }}">Source</a></li>
+			{%- endif -%}
+			{% if mod.website -%}
+			<li><a href="#">Website</a></li>
+			{%- endif %}
+		</ul>
+		<ul class="tags horizontal-layout join">
+			{%- for tag in mod.tags or [] %}
+			<li>{{ tag }}</li>
+			{%- endfor %}
+		</ul>
+		<ul class="platforms horizontal-layout join">
+			{%- for platform in mod.platforms or [] %}
+			<li>{{ platform }}</li>
+			{%- endfor %}
+		</ul>
+	</footer>
+</article>
+{%- endmacro -%}
+
+{%- macro authors_info(mod) %}
+<article class="AuthorsInfo canvas vertical-layout">
+	<h2 class="canvas-title">Authors</h2>
+	<ul class="vertical-layout">
+		{%- for name, author in mod.authors.items() %}
+		<li>
+			<article class="AuthorInfo canvas">
+				{% if author.icon %}
+				<img class="avatar" width="40px" height="40px"
+					src="https://proxy.bree.workers.dev/proxy?url={{ author.icon|urlencode }}" aria-hidden="true" />
+				{% endif %}
+				<h3>{{ name }}</h3>
+				<ul class="links vertical-layout">
+					<li><a href="{{ author.url }}">{{ name }}</a></li>
+					{% if author.support %}
+					<li><a href="{{ author.support }}">Support</a></li>
+					{% endif %}
+					{% if author.website %}
+					<li><a href="{{ author.website }}">Website</a></li>
+					{% endif %}
+				</ul>
+			</article>
+		</li>
+		{%- endfor %}
+	</ul>
+</article>
+{%- endmacro -%}
+
+{%- macro artifact_info(artifact) %}
+<article class="ArtifactInfo canvas">
+	<header>
+		{# todo: get filename from url #}
+		<h4 class="name"><a href="{{ artifact.url }}">{{ artifact.filename or artifact.url }}</a></h4>
+	</header>
+	<hr />
+	<dl class="grid-layout faded">
+		<dt>sha256</dt>
+		<dd>{{ artifact.sha256 }}</dd>
+		{% if artifact.installLocation %}
+		<dt>path</dt>
+		<dd>{{ artifact.installLocation }}</dd>
+		{% endif %}
+	</dl>
+</article>
+{%- endmacro -%}
+
+{%- macro dependency_list(dependencies) %}
+<dl class="vertical-layout canvas">
+	{% for name, dependency in dependencies.items() %}
+	<div class="dependency horizontal-layout">
+		<dt>
+			{% if find_mod(name) != null %}
+			<a href="/mod/{{ name|make_valid_path }}">{{ name }}</a>
+			{% else %}
+			{{ name }}
+			{% endif %}
+		</dt>
+		<dd>{{ dependency.version }}</dd>
+	</div>
+	{% endfor %}
+</dl>
+{%- endmacro -%}
+
+{%- macro version_info(name, version, is_primary_version) %}
+<article class="VersionInfo canvas vertical-layout">
+	<header class="horizontal-layout">
+		<h3>{{ name }}</h3>
+		{% if version.releaseUrl %}
+		<a href="{{ version.releaseUrl }}" class="release muted">Release Page</a>
+		{% endif %}
+	</header>
+
+	{% if version.changelog %}
+	<p>{{ version.changelog }}</p>
+	{% endif %}
+
+	{% if version.artifacts|length != 0 %}
+	<details class="artifacts" open="{{is_primary_version}}">
+		<summary>Files</summary>
+		<ul class="vertical-layout">
+			{% for artifact in version.artifacts %}
+			<li>
+				{{ artifact_info(artifact) }}
+			</li>
+			{% endfor %}
+		</ul>
+	</details>
+	{% endif %}
+
+	{% if version.dependencies != None %}
+	<details class="dependencies" open="{{ is_primary_version }}">
+		<summary>Dependencies</summary>
+		{{ dependency_list(version.dependencies) }}
+	</details>
+	{% endif %}
+
+	{% if version.conflicts != None %}
+	<details class="dependencies" open="{{ is_primary_version }}">
+		<summary>Conflicts</summary>
+		{{ dependency_list(version.conflicts) }}
+	</details>
+	{% endif %}
+</article>
+{%- endmacro -%}
+
+{%- macro versions_info(mod) %}
+<article class="VersionsInfo canvas vertical-layout">
+	<header>
+		<h2>Versions</h2>
+	</header>
+	<ul class="vertical-layout">
+		{% for name, version in mod.versions.items() %}
+		<li>
+			{{ version_info(name, version, loop.index == 0) }}
+		</li>
+		{% endfor %}
+	</ul>
+</article>
+{%- endmacro -%}

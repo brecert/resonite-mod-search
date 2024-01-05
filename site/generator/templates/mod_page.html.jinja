@@ -1,0 +1,24 @@
+{% import 'macros/components.html.jinja' as components %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Resonite Mods</title>
+	<link rel="stylesheet" href="/css/global.css" />
+	<link rel="stylesheet" href="/css/uis.css" />
+	<link rel="stylesheet" href="/css/tooltip.css" />
+	<link rel="stylesheet" href="/css/components/ModInfo.css" />
+	<link rel="stylesheet" href="/css/components/AuthorsInfo.css" />
+	<link rel="stylesheet" href="/css/components/VersionsInfo.css" />
+</head>
+
+<body class="Root panel vertical-layout">
+	{{ components.mod_info(mod) }}
+	{{ components.authors_info(mod) }}
+	{{ components.versions_info(mod) }}
+</body>
+
+</html>
