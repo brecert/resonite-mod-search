@@ -83,7 +83,7 @@ export const ModInfo: Component<ModInfo> = (mod) => {
 					<Show
 						when={mod.info.platforms != null && mod.info.platforms.length > 0}
 					>
-						<ul class="platforms">
+						<ul class="platforms faded">
 							<For each={mod.info.platforms}>
 								{(platform) => (
 									<li class="horizontal-layout">
