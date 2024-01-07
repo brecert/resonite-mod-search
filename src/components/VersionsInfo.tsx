@@ -118,7 +118,7 @@ export const VersionsInfo: Component<ModInfo> = (mod) => {
 
 	return (
 		<>
-			<article class="VersionsInfo canvas">
+			<article class="VersionsInfo vertical-layout canvas">
 				<h2>Versions</h2>
 				<ul class="versions vertical-layout">
 					<For each={versions()}>

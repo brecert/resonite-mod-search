@@ -1,3 +1,9 @@
+.VersionsInfo {
+	h2 {
+		margin-inline-start: var(--pad-half);
+	}
+}
+
 .VersionInfo {
 	.artifacts {
 		ul {
@@ -10,7 +16,7 @@
 	}
 
 	.dependency {
-		font-family: "Courier New", Courier, monospace;
+		font-family: var(--font-monospace);
 		gap: var(--pad-half);
 		font-size: 0.9rem;
 	}
@@ -22,7 +28,7 @@
 
 .ArtifactInfo {
 	.info {
-		font-family: "Courier New", Courier, monospace;
+		font-family: var(--font-monospace);
 		font-size: 0.9rem;
 
 		display: grid;

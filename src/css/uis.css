@@ -1,5 +1,6 @@
 :root {
 	--font-basic: Arial, Helvetica, sans-serif;
+	--font-monospace: "Courier New", Courier, monospace;
 
 	--bg-1: #0c1014;
 	--fg-1: #eee;
@@ -49,7 +50,7 @@
 }
 
 .panel {
-	max-width: 720px;
+	max-width: 740px;
 	margin: auto;
 }
 
