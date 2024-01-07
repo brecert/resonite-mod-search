@@ -7,6 +7,7 @@ import { categories, mods } from "./data";
 const searchIndex = mods.map((mod) => [
 	mod.namespace,
 	...[
+		mod.info.name,
 		mod.info.category,
 		mod.info.description,
 		...(mod.info.tags ?? []),
