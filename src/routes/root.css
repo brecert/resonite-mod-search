@@ -1,7 +1,26 @@
 .Main {
-	gap: calc(var(--pad-full-step) * 2);
+	display: grid;
+	grid:
+		"s s" auto
+		"f i" auto
+		". i" 1fr
+		/ auto 1fr;
+
+	gap: var(--pad-full-step);
 
 	.search {
-		font-size: 24px;
+		grid-area: s;
+
+		input {
+			font-size: 24px;
+		}
+	}
+
+	.filters {
+		grid-area: f;
+	}
+
+	.ModList {
+		grid-area: i;
 	}
 }

@@ -14,7 +14,7 @@ export const Mod: Component = () => {
   const params = useParams();
   const modInfo = createMemo(() => getModInfo(params.namespace)!);
   return (
-    <div class="Mod vertical-layout">
+    <div class="Mod panel vertical-layout">
       <ModInfo {...modInfo()} />
       <AuthorsInfo authors={modInfo().authors} />
       <VersionsInfo {...modInfo()} />
