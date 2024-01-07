@@ -36,13 +36,14 @@ export const DependencyList: Component<{
 	dependencies: Record<string, Dependency>;
 }> = (props) => {
 	return (
-		<dl class="vertical-layout canvas">
+		<dl class="dependency-list vertical-layout canvas">
 			<For each={Object.entries(props.dependencies)}>
 				{([namespace, dependency]) => {
 					const inManifest = createMemo(() =>
 						mods.some((mod) => mod.namespace === namespace)
 					);
 
+					// todo: use grid layout instead of this
 					return (
 						<div class="dependency horizontal-layout">
 							<dt>
@@ -89,13 +90,13 @@ const VersionInfo: Component<{
 				</ul>
 			</details>
 			<Show when={props.info.dependencies != null}>
-				<details open={props.is_primary_version}>
+				<details class="dependencies" open={props.is_primary_version}>
 					<summary>Dependencies</summary>
 					<DependencyList dependencies={props.info.dependencies!} />
 				</details>
 			</Show>
 			<Show when={props.info.conflicts != null}>
-				<details open={props.is_primary_version}>
+				<details class="conflicts" open={props.is_primary_version}>
 					<summary>Conflicts</summary>
 					<DependencyList dependencies={props.info.conflicts!} />
 				</details>

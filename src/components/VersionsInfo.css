@@ -9,13 +9,14 @@
 		margin-inline-start: auto;
 	}
 
-	.dependencies {
-		.dependency {
-			font-family: "Courier New", Courier, monospace;
-			margin: var(--pad-half) var(--pad-full);
-			gap: var(--pad-half);
-			font-size: 0.9rem;
-		}
+	.dependency {
+		font-family: "Courier New", Courier, monospace;
+		gap: var(--pad-half);
+		font-size: 0.9rem;
+	}
+
+	:is(.dependencies, .conflicts) dl {
+		margin: var(--pad-half);
 	}
 }
 
