@@ -1,7 +1,7 @@
 .Main {
 	display: grid;
 	grid:
-		"s s" auto
+		". s" auto
 		"f i" auto
 		". i" 1fr
 		/ auto 1fr;
