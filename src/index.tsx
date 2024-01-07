@@ -2,8 +2,9 @@
 import { render } from "solid-js/web";
 import { Route, Router } from "@solidjs/router";
 
-import "./uix.css";
-import "./index.css";
+import "./css/global.css";
+import "./css/tooltip.css";
+import "./css/uis.css";
 
 import { Root } from "./routes/root";
 import { Mod } from "./routes/mod/[id].tsx";
@@ -13,18 +14,18 @@ import { NotFound } from "./routes/NotFound.tsx";
 const root = document.getElementById("root");
 
 render(
-  () => (
-    <Router preload={false}>
-      <Route
-        path="/mod/:namespace"
-        component={Mod}
-        matchFilters={{
-          namespace: mods.map((mod) => encodeURIComponent(mod.namespace)),
-        }}
-      />
-      <Route path="/" component={Root} />
-      <Route path="*" component={NotFound} />
-    </Router>
-  ),
-  root!
+	() => (
+		<Router preload={false}>
+			<Route
+				path="/mod/:namespace"
+				component={Mod}
+				matchFilters={{
+					namespace: mods.map((mod) => encodeURIComponent(mod.namespace)),
+				}}
+			/>
+			<Route path="/" component={Root} />
+			<Route path="*" component={NotFound} />
+		</Router>
+	),
+	root!
 );

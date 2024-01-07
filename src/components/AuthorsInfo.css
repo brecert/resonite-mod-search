@@ -1,0 +1,23 @@
+.AuthorsInfo {
+	/* todo: I want to fit multiple authors on the same line but I don't have a good process for that now (long names), come up with a better one and come back to it later. */
+
+	> header {
+		margin-inline-start: var(--pad-half);
+	}
+}
+
+.AuthorInfo {
+	.avatar {
+		border-radius: 100%;
+	}
+
+	.main {
+		gap: 0;
+	}
+
+	.links {
+		gap: 0;
+		width: fit-content;
+		color: var(--fg-muted);
+	}
+}

@@ -1,0 +1,40 @@
+.VersionInfo {
+	.artifacts {
+		ul {
+			margin: var(--pad-half);
+		}
+	}
+
+	.release {
+		margin-inline-start: auto;
+	}
+
+	.dependencies {
+		.dependency {
+			font-family: "Courier New", Courier, monospace;
+			margin: var(--pad-half) var(--pad-full);
+			gap: var(--pad-half);
+			font-size: 0.9rem;
+		}
+	}
+}
+
+.ArtifactInfo {
+	.info {
+		font-family: "Courier New", Courier, monospace;
+		font-size: 0.9rem;
+
+		display: grid;
+		grid-template-columns: min-content 1fr;
+		gap: 0 var(--pad-half);
+
+		dd {
+			margin: 0;
+			word-break: break-all;
+		}
+	}
+
+	.name {
+		font-weight: normal;
+	}
+}

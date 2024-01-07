@@ -1,13 +1,7 @@
-.Root {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  max-width: 720px;
-  margin: auto;
-}
+.Main {
+	gap: calc(var(--pad-full-step) * 2);
 
-.ModList {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+	.search {
+		font-size: 24px;
+	}
 }

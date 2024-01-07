@@ -1,0 +1,41 @@
+[data-tooltip],
+.aria-tooltip {
+	position: relative;
+
+	&::after {
+		position: absolute;
+		color: #fff;
+		background: #24252f;
+		pointer-events: none;
+		border-radius: 4px;
+		padding: 0.5ch;
+		z-index: 100;
+		visibility: collapse;
+
+		width: max-content;
+	}
+
+	&[data-tooltip]::after {
+		content: attr(data-tooltip);
+	}
+
+	&.aria-tooltip::after {
+		content: attr(aria-label);
+	}
+
+	&:hover::after {
+		visibility: visible;
+	}
+
+	&.tip\:\^\<:after {
+		margin-block-end: 3px;
+		inset-block-end: 100%;
+		inset-inline-end: 0;
+	}
+
+	&.tip\:\^\>:after {
+		margin-block-end: 3px;
+		inset-block-end: 100%;
+		inset-inline-start: 0;
+	}
+}

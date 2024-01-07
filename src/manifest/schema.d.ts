@@ -60,6 +60,7 @@ export interface Mod {
   category: Category;
   description: string;
   flags?: Flag[];
+  // even though id is required in the manifest, there is none?
   id: string;
   name: string;
   platforms?: Platform[];

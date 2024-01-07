@@ -1,66 +1,33 @@
 .ModInfo {
-  contain: content;
+	header {
+		gap: 0.25rem;
+		align-items: baseline;
+	}
 
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    place-items: baseline;
-  }
+	.authors {
+		gap: inherit;
+		font-size: 0.8rem;
+	}
 
-  p {
-    color: #fefefe;
-  }
+	.category {
+		align-self: center;
+		margin-inline-start: auto;
+	}
 
-  h2 {
-    margin: 0;
-  }
+	.tags {
+		margin-inline-start: auto;
+	}
 
-  footer {
-    display: flex;
-    color: #888;
-
-    .links {
-      flex: 1;
-    }
-  }
-
-  .authors {
-    font-size: 0.8rem;
-    margin-left: 4px;
-    flex: 1;
-    white-space: nowrap;
-    display: flex;
-    gap: 4px;
-
-    ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      & li + li::before {
-        content: ", ";
-      }
-    }
-  }
-
-  .category {
-    color: #999;
-    align-self: center;
-  }
-
-  .links {
-    color: #b0bac5;
-    display: flex;
-    gap: 6px;
-    a {
-      color: inherit;
-    }
-  }
+	.links {
+		a {
+			color: inherit;
+		}
+	}
 }
 
+/* todo: instead of a media query have smart flexing rules for this */
 @media (max-width: 512px) {
-  .ModInfo h2 {
-    width: 100%;
-  }
+	.ModInfo h2 {
+		width: 100%;
+	}
 }
