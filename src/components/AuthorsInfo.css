@@ -8,7 +8,9 @@
 
 .AuthorInfo {
 	.avatar {
-		border-radius: 100%;
+		border-radius: var(--pad-half-step);
+		background-color: var(--canvas-bg-1);
+		padding: 2px;
 	}
 
 	.main {

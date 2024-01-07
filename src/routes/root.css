@@ -25,7 +25,7 @@
 	}
 }
 
-@media (max-aspect-ratio: 5.5 / 10) {
+@media (max-width: 660px) {
 	.Main {
 		grid:
 			"s" auto

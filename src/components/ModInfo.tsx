@@ -89,6 +89,7 @@ export const ModInfo: Component<ModInfo> = (mod) => {
 									<li class="horizontal-layout">
 										<Switch fallback={platform}>
 											<Match when={platform == "headless"}>
+												{/* todo: make better for mobile */}
 												<span class="aria-tooltip tip:^<" aria-label="headless">
 													<Outline.Server
 														width="1em"
