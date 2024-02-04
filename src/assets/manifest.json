@@ -213,6 +213,69 @@
 							}
 					}
 			},
+			"dev.hazre": {
+					"author": {
+							"hazre": {
+									"icon": "https://github.com/hazre.png",
+									"url": "https://github.com/hazre"
+							}
+					},
+					"entries": {
+							"dev.hazre.ResonitePrivacyShield": {
+									"additionalAuthors": {
+											"NepuShiro": {},
+											"ljoonal": {}
+									},
+									"category": "Misc",
+									"description": "Adds Some privacy enhancements like requesting web permission for anything besides Resonite APIs, as well as timezone and FPS spoofing. (Port of PrivacyShield mod by ljoonal)",
+									"name": "ResonitePrivacyShield",
+									"sourceLocation": "https://github.com/hazre/ResonitePrivacyShield",
+									"tags": [
+											"privacy",
+											"spoofing",
+											"network"
+									],
+									"versions": {
+											"2.0.2": {
+													"artifacts": [
+															{
+																	"filename": "PrivacyShield.dll",
+																	"sha256": "1BDBF99BCC08E3699A86BCEBE850C60B1598D0B8F39882E2F73CD7F225DC3352",
+																	"url": "https://github.com/hazre/ResonitePrivacyShield/releases/download/v2.0.2/PrivacyShield.dll"
+															}
+													]
+											}
+									}
+							},
+							"dev.hazre.VRCFTReceiver": {
+									"additionalAuthors": {
+											"art0007i": {},
+											"knackrack615": {}
+									},
+									"category": "Hardware Integration",
+									"description": "A Mod that let's you use VRCFaceTracking Program for Eye and Face Tracking inside Resonite.",
+									"name": "VRCFTReceiver",
+									"sourceLocation": "https://github.com/hazre/VRCFTReceiver",
+									"tags": [
+											"facetracking",
+											"eyetracking",
+											"expressions",
+											"avatar"
+									],
+									"versions": {
+											"1.0.4": {
+													"artifacts": [
+															{
+																	"filename": "VRCFTReceiver.dll",
+																	"sha256": "8B419A4FB64543D36CE7C02E1BFDCB9FA32039584F5462C3A6FBD067387F384F",
+																	"url": "https://github.com/hazre/VRCFTReceiver/releases/download/v1.0.4/VRCFTReceiver.dll"
+															}
+													]
+											}
+									}
+							}
+					}
+			},
 			"me.art0007i": {
 					"author": {
 							"art0007i": {
@@ -470,6 +533,17 @@
 															}
 													],
 													"releaseUrl": "https://github.com/art0007i/LocalStorage/releases/tag/2.0.1"
+											},
+											"2.0.2": {
+													"artifacts": [
+															{
+																	"filename": "LocalStorage.dll",
+																	"sha256": "c5a72d01d0a3327540ec26cff3bafae00e8b140b2a5e1ba881411258fa150ccf",
+																	"url": "https://github.com/art0007i/LocalStorage/releases/download/2.0.2/LocalStorage.dll"
+															}
+													],
+													"changelog": "Remove calls to UniLog.Log",
+													"releaseUrl": "https://github.com/art0007i/LocalStorage/releases/tag/2.0.2"
 											}
 									}
 							},
@@ -614,6 +688,17 @@
 															}
 													],
 													"releaseUrl": "https://github.com/art0007i/ShowDelegates/releases/tag/2.2.4"
+											},
+											"2.2.5": {
+													"artifacts": [
+															{
+																	"filename": "ShowDelegates.dll",
+																	"sha256": "ec2460b109f04c62045c0b537cf50b1e545b72f3aabb6f5e2a3b2320d1b55316",
+																	"url": "https://github.com/art0007i/ShowDelegates/releases/download/2.2.5/ShowDelegates.dll"
+															}
+													],
+													"changelog": "Fix issue where some delegates were not showing up (#7)",
+													"releaseUrl": "https://github.com/art0007i/ShowDelegates/releases/tag/2.2.5"
 											}
 									}
 							},
@@ -802,6 +887,93 @@
 							}
 					}
 			},
+			"net.dfgHiatus": {
+					"author": {
+							"dfgHiatus": {
+									"icon": "https://avatars.githubusercontent.com/u/51272212?v=4",
+									"url": "https://github.com/dfgHiatus"
+							}
+					},
+					"entries": {
+							"net.dfgHiatus.GTAImporter": {
+									"category": "Asset Importing",
+									"description": "Allows importing GTA V assets (.odr and .odd files). Requires Blender to be installed on the system or in [RESONITE PATH]/tools/Blender.",
+									"name": "GTAV-Importer",
+									"sourceLocation": "https://github.com/dfgHiatus/GTAImporter",
+									"versions": {
+											"2.0.0": {
+													"artifacts": [
+															{
+																	"sha256": "e3229f1f52969b4460eec36c5818f45c990094c72243765cffd14daad277a27c",
+																	"url": "https://github.com/dfgHiatus/GTAImporter/releases/download/v2.0.0/GTAImporter.dll"
+															}
+													],
+													"releaseUrl": "https://github.com/dfgHiatus/GTAImporter/releases/tag/v2.0.0"
+											}
+									}
+							},
+							"net.dfgHiatus.SpeedyURLs": {
+									"category": "Misc",
+									"description": "Skips the countdown in the hyperlink open dialog",
+									"name": "SpeedyURLs",
+									"sourceLocation": "https://github.com/dfgHiatus/SpeedyURLs",
+									"versions": {
+											"2.0.0": {
+													"artifacts": [
+															{
+																	"sha256": "52663402e34e48137765d49a0dcd8a47293a21e01692c274bf2c3cef643d2c79",
+																	"url": "https://github.com/dfgHiatus/SpeedyURLs/releases/download/v2.0.0/SpeedyURLs.dll"
+															}
+													],
+													"releaseUrl": "https://github.com/dfgHiatus/SpeedyURLs/releases/tag/v2.0.0"
+											}
+									}
+							},
+							"net.dfgHiatus.TarGZImporter": {
+									"category": "Asset Importing",
+									"description": "Allows importing and extraction of .tar.gz files",
+									"name": "TarGZImporter",
+									"sourceLocation": "https://github.com/dfgHiatus/TarGZImporter",
+									"versions": {
+											"2.0.0": {
+													"artifacts": [
+															{
+																	"sha256": "3ac7b36adaf12ce35438eefeeaa40f6935c350f8d1031c0857b33186cbf1d8c5",
+																	"url": "https://github.com/dfgHiatus/TarGZImporter/releases/download/v2.0.0/TarGZImporter.dll"
+															}
+													],
+													"releaseUrl": "https://github.com/dfgHiatus/TarGZImporter/releases/tag/v2.0.0"
+											}
+									}
+							}
+					}
+			},
+			"net.mizle": {
+					"author": {
+							"Eai": {
+									"url": "https://github.com/eai04191"
+							}
+					},
+					"entries": {
+							"net.mizle.ResoniteDisableGamepads": {
+									"category": "Controls",
+									"description": "Completely disables all gamepad inputs (e.g. from an Xbox Controller) in Resonite. The original was created by Lexevo.",
+									"name": "DisableGamepads",
+									"sourceLocation": "https://github.com/eai04191/ResoniteDisableGamepads",
+									"versions": {
+											"1.0.0": {
+													"artifacts": [
+															{
+																	"sha256": "0cf13dd11fbc93021ce17b65a37172fd456f5475984728414fa0b639ba3d3116",
+																	"url": "https://github.com/eai04191/ResoniteDisableGamepads/releases/download/v1.0.0/ResoniteDisableGamepads.dll"
+															}
+													],
+													"releaseUrl": "https://github.com/eai04191/ResoniteDisableGamepads/releases/tag/v1.0.0"
+											}
+									}
+							}
+					}
+			},
 			"net.pardeike": {
 					"author": {
 							"pardeike": {
@@ -971,6 +1143,15 @@
 															}
 													],
 													"releaseUrl": "https://github.com/Zeitheron/VDFaceTracking/releases/tag/1.0.2"
+											},
+											"1.0.3": {
+													"artifacts": [
+															{
+																	"sha256": "fa0ca6f05a82b9837a547350d1836c1e8aee91371f7b98d2023e257747383111",
+																	"url": "https://github.com/Zeitheron/VDFaceTracking/releases/download/1.0.3/VDFaceTracking.dll"
+															}
+													],
+													"releaseUrl": "https://github.com/Zeitheron/VDFaceTracking/releases/tag/1.0.3"
 											}
 									}
 							}
@@ -1039,7 +1220,10 @@
 							},
 							"owo.Nytra.FixSessionBrowser": {
 									"category": "Bug Workaround",
-									"description": "A mod that fixes the session browser. It is a workaround for a few bugs that have not been officially fixed yet.",
+									"description": "A mod that fixed the session browser. This is no longer needed as of Beta 2024.1.30.731.",
+									"flags": [
+											"deprecated"
+									],
 									"name": "FixSessionBrowser",
 									"sourceLocation": "https://github.com/Nytra/ResoniteFixSessionBrowser",
 									"versions": {
