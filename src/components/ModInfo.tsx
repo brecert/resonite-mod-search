@@ -37,7 +37,7 @@ export const CleanBreak: Component<{ text: string }> = (props) => {
 export const ModInfo: Component<ModInfo> = (mod) => {
 	return (
 		<>
-			<article class="ModInfo canvas">
+			<article classList={{ ModInfo: true, 'canvas': true, deprecated: mod.info.flags?.includes('deprecated') }}>
 				<header class="horizontal-layout">
 					<h2>
 						<a href={`/mod/${encodeURIComponent(mod.namespace)}`}>
@@ -77,6 +77,7 @@ export const ModInfo: Component<ModInfo> = (mod) => {
 						</Show>
 					</ul>
 					<ul class="tags horizontal-layout join faded">
+						<For each={mod.info.flags}>{(flag) => <li>{flag}</li>}</For>
 						<For each={mod.info.tags}>{(tag) => <li>{tag}</li>}</For>
 					</ul>
 					{/* todo: determine accessibility semantics of not adding elements like this */}

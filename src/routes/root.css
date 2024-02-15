@@ -23,6 +23,11 @@
 	.ModList {
 		grid-area: i;
 	}
+
+	/* only for this page. */
+	.ModInfo.deprecated {
+		opacity: 0.5;
+	}
 }
 
 @media (max-width: 660px) {
