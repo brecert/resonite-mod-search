@@ -116,6 +116,16 @@
 															}
 													],
 													"releaseUrl": "https://github.com/isovel/ResonitePlatformSpoof/releases/tag/v2.0.0"
+											},
+											"2.0.1": {
+													"artifacts": [
+															{
+																	"filename": "ResonitePlatformSpoof.dll",
+																	"sha256": "082D9872AC50F915B8D06820AF9B5E7D44D8941D6D2FEB023818EE2C34376CF3",
+																	"url": "https://github.com/isovel/ResonitePlatformSpoof/releases/download/v2.0.1/ResonitePlatformSpoof.dll"
+															}
+													],
+													"releaseUrl": "https://github.com/isovel/ResonitePlatformSpoof/releases/tag/v2.0.1"
 											}
 									}
 							}
@@ -208,6 +218,21 @@
 															}
 													},
 													"releaseUrl": "https://github.com/resonite-modding-group/ResoniteModLoader/releases/tag/2.5.1"
+											},
+											"2.6.0": {
+													"artifacts": [
+															{
+																	"filename": "ResoniteModLoader.dll",
+																	"sha256": "35e928db9f4a1e703cf9b5b597ccecf1142bba36f1ca78217cc7edd2e116f4ef",
+																	"url": "https://github.com/resonite-modding-group/ResoniteModLoader/releases/download/2.6.0/ResoniteModLoader.dll"
+															}
+													],
+													"dependencies": {
+															"net.pardeike.harmony": {
+																	"version": "^2.2.2"
+															}
+													},
+													"releaseUrl": "https://github.com/resonite-modding-group/ResoniteModLoader/releases/tag/2.6.0"
 											}
 									}
 							}
@@ -1045,12 +1070,22 @@
 															}
 													],
 													"releaseUrl": "https://github.com/Raidriar796/ResoniteIkCulling/releases/tag/2.5.0"
+											},
+											"2.6.1": {
+													"artifacts": [
+															{
+																	"filename": "ResoniteIKCulling.dll",
+																	"sha256": "01A38C707818039EE9EAF3BFC2F0EFFB406308CC1968D8F419C4BB60D38EB49A",
+																	"url": "https://github.com/Raidriar796/ResoniteIkCulling/releases/download/2.6.1/ResoniteIKCulling.dll"
+															}
+													],
+													"releaseUrl": "https://github.com/Raidriar796/ResoniteIkCulling/releases/tag/2.6.1"
 											}
 									}
 							},
 							"net.raidriar796.StresslessHeadless": {
 									"category": "Technical Tweaks",
-									"description": "Reduces strain on Headless clients by disabling frequent and heavy calculations.",
+									"description": "Disables frequent and heavy calculations on certain components from running on Headless clients.",
 									"name": "StresslessHeadless",
 									"platforms": [
 											"headless"
@@ -1066,6 +1101,16 @@
 															}
 													],
 													"releaseUrl": "https://github.com/Raidriar796/StresslessHeadless/releases/tag/1.1.0"
+											},
+											"1.2.0": {
+													"artifacts": [
+															{
+																	"filename": "StresslessHeadless.dll",
+																	"sha256": "3A42C7169335F3F1D02EB4B352977E0082EA8A458BCBE129BC3D12A182B3EC15",
+																	"url": "https://github.com/Raidriar796/StresslessHeadless/releases/download/1.2.0/StresslessHeadless.dll"
+															}
+													],
+													"releaseUrl": "https://github.com/Raidriar796/StresslessHeadless/releases/tag/1.2.0"
 											}
 									}
 							},
@@ -1089,6 +1134,32 @@
 							}
 					}
 			},
+			"net.rampa3": {
+					"author": {
+							"rampa3": {
+									"url": "https://github.com/rampa3"
+							}
+					},
+					"entries": {
+							"net.rampa3.3DDashOnScreenResonite": {
+									"category": "Dashboard",
+									"description": "Resonite Mod Loader mod, that replaces 2D overlay dash in Screen mode with the regular VR one",
+									"name": "3DDashOnScreenResonite",
+									"sourceLocation": "https://github.com/rampa3/3DDashOnScreenResonite",
+									"versions": {
+											"3.6.0": {
+													"artifacts": [
+															{
+																	"sha256": "fe56959ff282e994aeff8b67fd0700916ba539a8f175faf377a999e899fc3284",
+																	"url": "https://github.com/rampa3/3DDashOnScreenResonite/releases/download/3.6.0.0/3DDashOnScreenResonite.dll"
+															}
+													],
+													"releaseUrl": "https://github.com/rampa3/3DDashOnScreenResonite/releases/tag/3.6.0.0"
+											}
+									}
+							}
+					}
+			},
 			"ninja.badhalo": {
 					"author": {
 							"badhaloninja": {
@@ -1099,9 +1170,26 @@
 							}
 					},
 					"entries": {
+							"ninja.badhalo.FixAltEnter": {
+									"category": "Bug Workaround",
+									"description": "Fixes alt + enter not respecting monitor resolution",
+									"name": "FixAltEnter",
+									"sourceLocation": "https://github.com/badhaloninja/FixAltEnter",
+									"versions": {
+											"2.0.0": {
+													"artifacts": [
+															{
+																	"sha256": "e2e2117f3c30f8a9fa5e7be8fe459fcd521beb3212be0897d1481c0d8d68e7fe",
+																	"url": "https://github.com/badhaloninja/FixAltEnter/releases/download/v2.0.0/FixAltEnter.dll"
+															}
+													],
+													"releaseUrl": "https://github.com/badhaloninja/FixAltEnter/releases/tag/v2.0.0"
+											}
+									}
+							},
 							"ninja.badhalo.ModSettings": {
 									"category": "Dashboard",
-									"description": "Adds a dash screen to show mods and edit their configs",
+									"description": "Adds a dash screen to show and edit mods and their configs",
 									"name": "ResoniteModSettings",
 									"sourceLocation": "https://github.com/badhaloninja/ResoniteModSettings",
 									"versions": {
