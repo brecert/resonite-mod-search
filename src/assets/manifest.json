@@ -170,7 +170,9 @@
           "description": "A mod loader for Resonite",
           "name": "ResoniteModLoader",
           "sourceLocation": "https://github.com/resonite-modding-group/ResoniteModLoader/",
-          "tags": ["modloader"],
+          "tags": [
+            "modloader"
+          ],
           "versions": {
             "2.4.0": {
               "artifacts": [
@@ -253,7 +255,11 @@
           "description": "Adds Some privacy enhancements like requesting web permission for anything besides Resonite APIs, as well as timezone and FPS spoofing. (Port of PrivacyShield mod by ljoonal)",
           "name": "ResonitePrivacyShield",
           "sourceLocation": "https://github.com/hazre/ResonitePrivacyShield",
-          "tags": ["privacy", "spoofing", "network"],
+          "tags": [
+            "privacy",
+            "spoofing",
+            "network"
+          ],
           "versions": {
             "2.0.2": {
               "artifacts": [
@@ -275,7 +281,12 @@
           "description": "A Mod that let's you use VRCFaceTracking Program for Eye and Face Tracking inside Resonite.",
           "name": "VRCFTReceiver",
           "sourceLocation": "https://github.com/hazre/VRCFTReceiver",
-          "tags": ["facetracking", "eyetracking", "expressions", "avatar"],
+          "tags": [
+            "facetracking",
+            "eyetracking",
+            "expressions",
+            "avatar"
+          ],
           "versions": {
             "1.0.4": {
               "artifacts": [
@@ -1097,7 +1108,10 @@
           "category": "Asset Importing",
           "description": "Allows importing VRML 1.0/2.0 and X3D files. Requires Blender to be installed on the system or in [RESONITE PATH]/tools/Blender.",
           "name": "VRMLImporter",
-          "platforms": ["windows", "linux-wine"],
+          "platforms": [
+            "windows",
+            "linux-wine"
+          ],
           "sourceLocation": "https://github.com/dfgHiatus/ResoniteVRMLImporter",
           "versions": {
             "2.0.0": {
@@ -1269,7 +1283,9 @@
           "category": "Technical Tweaks",
           "description": "Disables frequent and heavy calculations on certain components from running on Headless clients.",
           "name": "StresslessHeadless",
-          "platforms": ["headless"],
+          "platforms": [
+            "headless"
+          ],
           "sourceLocation": "https://github.com/Raidriar796/StresslessHeadless",
           "versions": {
             "1.1.0": {
@@ -1486,9 +1502,13 @@
         "owo.Nytra / Rucio.HeadlessToolPermissionKickCrashFix": {
           "category": "Bug Workaround",
           "description": "A Headless Server mod that prevented tool permission kicks from causing a world crash. This is no longer needed as of Beta 2024.3.12.1169.",
-          "flags": ["deprecated"],
+          "flags": [
+            "deprecated"
+          ],
           "name": "HeadlessToolPermissionKickCrashFix",
-          "platforms": ["headless"],
+          "platforms": [
+            "headless"
+          ],
           "sourceLocation": "https://github.com/Nytra/ResoniteHeadlessToolPermissionKickCrashFix",
           "versions": {
             "1.0.0": {
@@ -1548,7 +1568,9 @@
         "owo.Nytra.FixSessionBrowser": {
           "category": "Bug Workaround",
           "description": "A mod that fixed the session browser. This is no longer needed as of Beta 2024.1.30.731.",
-          "flags": ["deprecated"],
+          "flags": [
+            "deprecated"
+          ],
           "name": "FixSessionBrowser",
           "sourceLocation": "https://github.com/Nytra/ResoniteFixSessionBrowser",
           "versions": {
@@ -1569,6 +1591,26 @@
                 }
               ],
               "releaseUrl": "https://github.com/Nytra/ResoniteFixSessionBrowser/releases/tag/v1.1.0"
+            }
+          }
+        },
+        "owo.Nytra.InspectorDelegateCaller": {
+          "additionalAuthors": {
+            "eia485": {}
+          },
+          "category": "Inspectors",
+          "description": "Adds some buttons to inspector UI for workers that have callable delegates.",
+          "name": "InspectorDelegateCaller",
+          "sourceLocation": "https://github.com/Nytra/ResoniteInspectorDelegateCaller",
+          "versions": {
+            "1.4.1": {
+              "artifacts": [
+                {
+                  "sha256": "b8c668fd10157e9221389dfe4ebfcfeb85211dd22868ce32c3d8e013ecf80467",
+                  "url": "https://github.com/Nytra/ResoniteInspectorDelegateCaller/releases/download/v1.4.1/InspectorDelegateCaller.dll"
+                }
+              ],
+              "releaseUrl": "https://github.com/Nytra/ResoniteInspectorDelegateCaller/releases/tag/v1.4.1"
             }
           }
         },
