@@ -374,6 +374,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/hantabaru1014/ResoniteScreenshotExtensions/releases/tag/v1.1.1"
+                        },
+                        "1.1.2": {
+                            "artifacts": [
+                                {
+                                    "sha256": "451fc7f85c0e8e2bd60a255d7ecd28938eefaef82e875677a5c4230b2cab6a84",
+                                    "url": "https://github.com/hantabaru1014/ResoniteScreenshotExtensions/releases/download/v1.1.2/ResoniteScreenshotExtensions.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/hantabaru1014/ResoniteScreenshotExtensions/releases/tag/v1.1.2"
                         }
                     }
                 }
@@ -409,7 +418,18 @@
                                     "sha256": "1BDBF99BCC08E3699A86BCEBE850C60B1598D0B8F39882E2F73CD7F225DC3352",
                                     "url": "https://github.com/hazre/ResonitePrivacyShield/releases/download/v2.0.2/PrivacyShield.dll"
                                 }
-                            ]
+                            ],
+                            "releaseUrl": "https://github.com/hazre/ResonitePrivacyShield/releases/tag/v2.0.2"
+                        },
+                        "2.0.3": {
+                            "artifacts": [
+                                {
+                                    "filename": "PrivacyShield.dll",
+                                    "sha256": "13D47822596AB0D6DD2DDD2B7AE6BB005A1FF89A84E1E6345B0912E2BCDCEDA0",
+                                    "url": "https://github.com/hazre/ResonitePrivacyShield/releases/download/v2.0.3/PrivacyShield.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/hazre/ResonitePrivacyShield/releases/tag/v2.0.3"
                         }
                     }
                 },
@@ -634,6 +654,24 @@
                         }
                     }
                 },
+                "me.art0007i.DuplicateFix": {
+                    "category": "Bug Workaround",
+                    "description": "Makes it so duplicated items maintain references between each other.",
+                    "name": "DuplicateFix",
+                    "sourceLocation": "https://github.com/art0007i/DuplicateFix",
+                    "versions": {
+                        "1.0.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "DuplicateFix.dll",
+                                    "sha256": "f34eeacaeed4129eb300adefd79ebdcd559dbfe582ee004e7adac44428c69ddb",
+                                    "url": "https://github.com/art0007i/DuplicateFix/releases/download/1.0.1/DuplicateFix.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/DuplicateFix/releases/tag/1.0.1"
+                        }
+                    }
+                },
                 "me.art0007i.ExtrasButtonTweaks": {
                     "category": "Inspectors",
                     "description": "Tweaks the extras button next to field names in inspectors",
@@ -706,6 +744,42 @@
                         }
                     }
                 },
+                "me.art0007i.JustBoundedUIX": {
+                    "category": "Technical Tweaks",
+                    "description": "Adds gizmo bounding boxes to UIX elements, and fixes UIX elements breaking when a parent is inserted.",
+                    "name": "JustBoundedUIX",
+                    "sourceLocation": "https://github.com/art0007i/JustBoundedUIX",
+                    "versions": {
+                        "2.0.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "JustBoundedUIX.dll",
+                                    "sha256": "fbefcaf3d3b8735f34fcfffa0caf15ae529e3ee5f56eb89e9ff0118ca85618b6",
+                                    "url": "https://github.com/art0007i/JustBoundedUIX/releases/download/2.0.1/JustBoundedUIX.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/JustBoundedUIX/releases/tag/2.0.1"
+                        }
+                    }
+                },
+                "me.art0007i.LargerObjectMessagePreviews": {
+                    "category": "Dashboard",
+                    "description": "Increases the size of object message thumbnails.",
+                    "name": "LargerObjectMessagePreviews",
+                    "sourceLocation": "https://github.com/art0007i/LargerObjectMessagePreviews",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "LargerObjectMessagePreviews.dll",
+                                    "sha256": "e8f6bb0dbde068bc53d01a0788f9ff8b21dfbec5320df88c9c81aa112633d5b4",
+                                    "url": "https://github.com/art0007i/LargerObjectMessagePreviews/releases/download/2.0.0/LargerObjectMessagePreviews.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/LargerObjectMessagePreviews/releases/tag/2.0.0"
+                        }
+                    }
+                },
                 "me.art0007i.LocalStorage": {
                     "category": "Misc",
                     "description": "Allows you to store items locally on your hard drive",
@@ -732,6 +806,42 @@
                             ],
                             "changelog": "Remove calls to UniLog.Log",
                             "releaseUrl": "https://github.com/art0007i/LocalStorage/releases/tag/2.0.2"
+                        }
+                    }
+                },
+                "me.art0007i.LogCleaner": {
+                    "category": "Technical Tweaks",
+                    "description": "Omits certain information from your logs to make them more readable.",
+                    "name": "LogCleaner",
+                    "sourceLocation": "https://github.com/art0007i/LogCleaner",
+                    "versions": {
+                        "1.1.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "LogCleaner.dll",
+                                    "sha256": "aece08d0beef41ed9c4ec6e1d759bb8f5fafcc0e00805d75b9d09db2f5915861",
+                                    "url": "https://github.com/art0007i/LogCleaner/releases/download/1.1.0/LogCleaner.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/LogCleaner/releases/tag/1.1.0"
+                        }
+                    }
+                },
+                "me.art0007i.MessageCopy": {
+                    "category": "Dashboard",
+                    "description": "Allows you to copy all messages, not just text ones.",
+                    "name": "MessageCopy",
+                    "sourceLocation": "https://github.com/art0007i/MessageCopy",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "MessageCopy.dll",
+                                    "sha256": "dc74baff6a08083f4e493e0251c76ba09c88c57ce998c9908f2a401cb2413dc7",
+                                    "url": "https://github.com/art0007i/MessageCopy/releases/download/1.0.0/MessageCopy.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/MessageCopy/releases/tag/1.0.0"
                         }
                     }
                 },
@@ -772,6 +882,24 @@
                         }
                     }
                 },
+                "me.art0007i.NotificationFixer": {
+                    "category": "Dashboard",
+                    "description": "Fixes the notifications being off center and getting cut off slightly.",
+                    "name": "NotificationFixer",
+                    "sourceLocation": "https://github.com/art0007i/NotificationFixer",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "NotificationFixer.dll",
+                                    "sha256": "8f3e56671a6b278c7036f72d2a97f3cd56afd6d72f6599259f8e580de88b4954",
+                                    "url": "https://github.com/art0007i/NotificationFixer/releases/download/1.0.0/NotificationFixer.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/NotificationFixer/releases/tag/1.0.0"
+                        }
+                    }
+                },
                 "me.art0007i.ParentalIssues": {
                     "category": "Memes",
                     "description": "Changes the default parent and child object names to be funnier",
@@ -793,6 +921,9 @@
                 "me.art0007i.PresenceToggle": {
                     "category": "Misc",
                     "description": "Allows you to toggle steam and discord rich presence",
+                    "flags": [
+                        "deprecated"
+                    ],
                     "name": "PresenceToggle",
                     "sourceLocation": "https://github.com/art0007i/PresenceToggle",
                     "versions": {
@@ -847,6 +978,9 @@
                 "me.art0007i.ShadowDistanceChanger": {
                     "category": "Visual Tweaks",
                     "description": "Allows changing the shadow distance using the mod's config",
+                    "flags": [
+                        "deprecated"
+                    ],
                     "name": "ShadowDistanceChanger",
                     "sourceLocation": "https://github.com/art0007i/ShadowDistanceChanger",
                     "versions": {
@@ -1048,6 +1182,33 @@
                 }
             }
         },
+        "net.Cyro": {
+            "author": {
+                "Cyro": {
+                    "icon": "https://github.com/BlueCyro.png",
+                    "url": "https://github.com/BlueCyro"
+                }
+            },
+            "entries": {
+                "net.Cyro.CherryPick": {
+                    "category": "Technical Tweaks",
+                    "description": "Simple component and protoflux searching",
+                    "name": "CherryPick",
+                    "sourceLocation": "https://github.com/BlueCyro/CherryPick",
+                    "versions": {
+                        "1.0.7": {
+                            "artifacts": [
+                                {
+                                    "sha256": "9d5799a0561e0f24ae11cf7cf021fae6515537b93641a8ee0b90782c0fa73588",
+                                    "url": "https://github.com/BlueCyro/CherryPick/releases/download/1.0.7/CherryPick.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/BlueCyro/CherryPick/releases/tag/1.0.7"
+                        }
+                    }
+                }
+            }
+        },
         "net.catshark": {
             "author": {
                 "CatSharkShin": {
@@ -1093,6 +1254,23 @@
                 }
             },
             "entries": {
+                "net.deltawolf.PermissionControl": {
+                    "category": "Dashboard",
+                    "description": "Allows editing permission overrides individually, even for users not in a session",
+                    "name": "PermissionControl",
+                    "sourceLocation": "https://github.com/XDelta/PermissionControl",
+                    "versions": {
+                        "2.0.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "575a1a04fe0aaac21b6a310924eb8a1b76f251a340b6f892633c9a2d57481706",
+                                    "url": "https://github.com/XDelta/PermissionControl/releases/download/2.0.0/PermissionControl.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/XDelta/PermissionControl/releases/tag/2.0.0"
+                        }
+                    }
+                },
                 "net.deltawolf.ResonitePTTKeybinds": {
                     "category": "Controls",
                     "description": "Allows disabling and rebinding the default Push to Talk / Mute keybinds and setting keybinds to set your current voicemode",
@@ -1790,6 +1968,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/badhaloninja/Optizoom/releases/tag/v2.1.1"
+                        },
+                        "2.1.2": {
+                            "artifacts": [
+                                {
+                                    "sha256": "d6512b01bbc7c4760454b9deb90417bdb509576600bfb24e4c114d363b059ace",
+                                    "url": "https://github.com/badhaloninja/Optizoom/releases/download/v2.1.2/Optizoom.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/badhaloninja/Optizoom/releases/tag/v2.1.2"
                         }
                     }
                 }
@@ -1828,6 +2015,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Zeitheron/VDFaceTracking/releases/tag/1.0.3"
+                        },
+                        "1.1.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "87da2e15f7981ea09c6060f2b06ba25909757214e4a89751fa93e672e981c70b",
+                                    "url": "https://github.com/Zeitheron/VDFaceTracking/releases/download/1.1.0/VDFaceTracking.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Zeitheron/VDFaceTracking/releases/tag/1.1.0"
                         }
                     }
                 }
@@ -1880,6 +2076,23 @@
                         }
                     }
                 },
+                "owo.Nytra.ColorMyProtoFlux": {
+                    "category": "Protoflux",
+                    "description": "Apply colors to your ProtoFlux nodes. Highly configurable.",
+                    "name": "ColorMyProtoFlux",
+                    "sourceLocation": "https://github.com/Nytra/ResoniteColorMyProtoFlux",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "91ebe77c947022ed14f411d6350eb4186807a5dbf1ec3b72f242b45c7764fda4",
+                                    "url": "https://github.com/Nytra/ResoniteColorMyProtoFlux/releases/download/v1.0.0/ColorMyProtoFlux.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteColorMyProtoFlux/releases/tag/v1.0.0"
+                        }
+                    }
+                },
                 "owo.Nytra.ComponentSearchWizard": {
                     "category": "Wizards",
                     "description": "Adds a wizard to allow searching for components that exist on slots in the current world. You can search by type and/or by name, and get a list of references as output.",
@@ -1912,6 +2125,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Nytra/ResoniteComponentSearchWizard/releases/tag/v1.1.2"
+                        },
+                        "1.1.3": {
+                            "artifacts": [
+                                {
+                                    "sha256": "19c156975490ddce08c146649e610c259f57da7eb27cb99a9bf2bc6c0e7745b3",
+                                    "url": "https://github.com/Nytra/ResoniteComponentSearchWizard/releases/download/v1.1.3/ComponentSearchWizard.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteComponentSearchWizard/releases/tag/v1.1.3"
                         }
                     }
                 },
@@ -1978,6 +2200,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Nytra/ResoniteInspectorDelegateCaller/releases/tag/v1.4.1"
+                        },
+                        "1.4.2": {
+                            "artifacts": [
+                                {
+                                    "sha256": "8e5a2ae15d38d7093bf78f64756eaa40aed30cddcf1fb74b014557df5d321e58",
+                                    "url": "https://github.com/Nytra/ResoniteInspectorDelegateCaller/releases/download/v1.4.2/InspectorDelegateCaller.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteInspectorDelegateCaller/releases/tag/v1.4.2"
                         }
                     }
                 },
@@ -2012,6 +2243,49 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Nytra/ResoniteLogFlush/releases/tag/v1.1.0"
+                        }
+                    }
+                },
+                "owo.Nytra.NoTankControls": {
+                    "category": "Controls",
+                    "description": "Don't lock up joystick movement while tools are equipped. Very helpful on Quest. This version has tweaks to work better with InspectorScroll.",
+                    "name": "NoTankControls-InspectorScrollCompatible",
+                    "sourceLocation": "https://github.com/Nytra/NoTankControls",
+                    "versions": {
+                        "1.1.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "04cfe11bd0415f4fa62f00f39987b2b7667935995823ccede10f534238deb51d",
+                                    "url": "https://github.com/Nytra/NoTankControls/releases/download/v1.1.0/NoTankControls.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/NoTankControls/releases/tag/v1.1.0"
+                        }
+                    }
+                },
+                "owo.Nytra.ReferenceFinderWizard": {
+                    "category": "Wizards",
+                    "description": "Adds a wizard that lets you find references to things. Has options to adjust the search and can optionally spawn a detailed text output.",
+                    "name": "ReferenceFinderWizard",
+                    "sourceLocation": "https://github.com/Nytra/ResoniteReferenceFinderWizard",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "c89cf8cd870c01afd179b5ea292447fceef30a0ad28affca953a03d4fb23e610",
+                                    "url": "https://github.com/Nytra/ResoniteReferenceFinderWizard/releases/download/v1.0.0/ReferenceFinderWizard.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteReferenceFinderWizard/releases/tag/v1.0.0"
+                        },
+                        "1.0.1": {
+                            "artifacts": [
+                                {
+                                    "sha256": "e3e06ad0b77c534c72f9c08f77aa2f9514022e07d40a16b493b36241e746d99c",
+                                    "url": "https://github.com/Nytra/ResoniteReferenceFinderWizard/releases/download/v1.0.1/ReferenceFinderWizard.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteReferenceFinderWizard/releases/tag/v1.0.1"
                         }
                     }
                 },
