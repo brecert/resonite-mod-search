@@ -331,6 +331,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/hantabaru1014/BetterInventoryBrowser/releases/tag/v0.6.2"
+                        },
+                        "0.6.3": {
+                            "artifacts": [
+                                {
+                                    "sha256": "fe0e1419ae64267267910c37cdc1b7b3e199a4e4a22126250a8491b2b5aba2ff",
+                                    "url": "https://github.com/hantabaru1014/BetterInventoryBrowser/releases/download/v0.6.3/BetterInventoryBrowser.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/hantabaru1014/BetterInventoryBrowser/releases/tag/v0.6.3"
                         }
                     }
                 },
@@ -383,6 +392,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/hantabaru1014/ResoniteScreenshotExtensions/releases/tag/v1.1.2"
+                        },
+                        "1.1.3": {
+                            "artifacts": [
+                                {
+                                    "sha256": "520f11015cf6c319685ad3e5cee41428d71f705636963fd2b0d10a029c3a62fd",
+                                    "url": "https://github.com/hantabaru1014/ResoniteScreenshotExtensions/releases/download/v1.1.3/ResoniteScreenshotExtensions.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/hantabaru1014/ResoniteScreenshotExtensions/releases/tag/v1.1.3"
                         }
                     }
                 }
@@ -462,6 +480,59 @@
                 }
             }
         },
+        "je.dj": {
+            "author": {
+                "djsime1": {
+                    "icon": "https://avatars.githubusercontent.com/u/8518150?v=4",
+                    "url": "https://github.com/djsime1"
+                }
+            },
+            "entries": {
+                "je.dj.CopyHyperlink": {
+                    "category": "Misc",
+                    "description": "Adds a \"Copy Link\" button to the hyperlink popup.",
+                    "name": "CopyHyperlink",
+                    "sourceLocation": "https://github.com/djsime1/CopyHyperlink",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "CopyHyperlink.dll",
+                                    "sha256": "ec25187d32b6d2612ec988152f4a79c5c20873f5bb0fd87780944a4fe511be48",
+                                    "url": "https://github.com/djsime1/CopyHyperlink/releases/download/1.0.0/CopyHyperlink.dll"
+                                }
+                            ],
+                            "changelog": "Initial release.",
+                            "releaseUrl": "https://github.com/djsime1/CopyHyperlink/releases/tag/1.0.0"
+                        }
+                    }
+                },
+                "je.dj.GradientDriverEasing": {
+                    "category": "Inspectors",
+                    "description": "Adds easing function presets to ValueGradientDriver components.",
+                    "name": "GradientDriverEasing",
+                    "sourceLocation": "https://github.com/djsime1/GradientDriverEasing",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "GradientDriverEasing.dll",
+                                    "sha256": "4e3d1fcb7343867549b3debc555f45f3cf0738e1a5021058cc6e7260af1489df",
+                                    "url": "https://github.com/djsime1/GradientDriverEasing/releases/download/1.0.0/GradientDriverEasing.dll"
+                                }
+                            ],
+                            "changelog": "Initial release.\nNote: CustomUILib is a required dependency, this mod will not work without CustomUILib being installed as well.",
+                            "dependencies": {
+                                "me.art0007i.CustomUILib": {
+                                    "version": "^2.0.0"
+                                }
+                            },
+                            "releaseUrl": "https://github.com/djsime1/GradientDriverEasing/releases/tag/1.0.0"
+                        }
+                    }
+                }
+            }
+        },
         "me.art0007i": {
             "author": {
                 "art0007i": {
@@ -470,6 +541,24 @@
                 }
             },
             "entries": {
+                "me.art0007i.AlwaysResetLocalHome": {
+                    "category": "Misc",
+                    "description": "Forces the local home to be reset every time the game is launched, it also tries to load the local home file from `Resonite/RuntimeData/LocalModded.bin`.",
+                    "name": "AlwaysResetLocalHome",
+                    "sourceLocation": "https://github.com/art0007i/AlwaysResetLocalHome",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "AlwaysResetLocalHome.dll",
+                                    "sha256": "975e3410d31eeaacad571a458283fd0c8cbb40df037f6b27926dbf8c3ba94253",
+                                    "url": "https://github.com/art0007i/AlwaysResetLocalHome/releases/download/1.0.0/AlwaysResetLocalHome.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/AlwaysResetLocalHome/releases/tag/1.0.0"
+                        }
+                    }
+                },
                 "me.art0007i.CapturePrivateUI": {
                     "category": "Misc",
                     "description": "Allows finger photos or cameras with a specific tag to render private UI",
@@ -1019,6 +1108,35 @@
                         }
                     }
                 },
+                "me.art0007i.SessionItemModal": {
+                    "category": "Dashboard",
+                    "description": "Allows opening modal dialogs for sessions seen in the contacts tab, by clicking the circle preview. This mod is quite jank but I still find it useful.",
+                    "name": "SessionItemModal",
+                    "sourceLocation": "https://github.com/art0007i/SessionItemModal",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "SessionItemModal.dll",
+                                    "sha256": "f6e502ac0afbd600068168b41258048e78e3827f4550cacb71f1d258f5ff94bb",
+                                    "url": "https://github.com/art0007i/SessionItemModal/releases/download/1.0.0/SessionItemModal.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/SessionItemModal/releases/tag/1.0.0"
+                        },
+                        "1.0.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "SessionItemModal.dll",
+                                    "sha256": "1228278c23ae210d8d60285505d4bd5df4550cc3d01fd2f09402b526e2049ba3",
+                                    "url": "https://github.com/art0007i/SessionItemModal/releases/download/1.0.1/SessionItemModal.dll"
+                                }
+                            ],
+                            "changelog": "Fix for latest version.",
+                            "releaseUrl": "https://github.com/art0007i/SessionItemModal/releases/tag/1.0.1"
+                        }
+                    }
+                },
                 "me.art0007i.ShadowDistanceChanger": {
                     "category": "Visual Tweaks",
                     "description": "Allows changing the shadow distance using the mod's config",
@@ -1095,6 +1213,17 @@
                             ],
                             "changelog": "Rebuilt for new resonite version",
                             "releaseUrl": "https://github.com/art0007i/ShowDelegates/releases/tag/2.2.6"
+                        },
+                        "2.2.7": {
+                            "artifacts": [
+                                {
+                                    "filename": "ShowDelegates.dll",
+                                    "sha256": "3a13bb871d3957bc0a0d956494e8805e9e0686a8233a82bb15a4f7b82d4a0846",
+                                    "url": "https://github.com/art0007i/ShowDelegates/releases/download/2.2.7/ShowDelegates.dll"
+                                }
+                            ],
+                            "changelog": "Fixed the mod not working in the latest version",
+                            "releaseUrl": "https://github.com/art0007i/ShowDelegates/releases/tag/2.2.7"
                         }
                     }
                 },
@@ -1295,6 +1424,26 @@
                             ],
                             "changelog": "Rebuild for 2024.4.17.208",
                             "releaseUrl": "https://github.com/CatSharkShin/ReArmature/releases/tag/2.1.1"
+                        },
+                        "2.1.2": {
+                            "artifacts": [
+                                {
+                                    "sha256": "a9e73ce996c231a1a49ef2a83754be1474a2ad707198d24f9649e3e3ae28f890",
+                                    "url": "https://github.com/CatSharkShin/ReArmature/releases/download/2.1.2/ReArmature.dll"
+                                }
+                            ],
+                            "changelog": "Fixed Empty Bone Stripping. Fixed Null Mesh Asset occurences. Reworked button.",
+                            "releaseUrl": "https://github.com/CatSharkShin/ReArmature/releases/tag/2.1.2"
+                        },
+                        "2.1.3": {
+                            "artifacts": [
+                                {
+                                    "sha256": "26c2501f8424c7f8e4dab8baf85a6e53a19f1619dde7c34f02a49999bac67550",
+                                    "url": "https://github.com/CatSharkShin/ReArmature/releases/download/2.1.3/ReArmature.dll"
+                                }
+                            ],
+                            "changelog": "UIX Changes, and rebuilt for the latest Resonite version.",
+                            "releaseUrl": "https://github.com/CatSharkShin/ReArmature/releases/tag/2.1.3"
                         }
                     }
                 }
@@ -1764,6 +1913,9 @@
                 "net.raidriar796.NoSteamScreenshots": {
                     "category": "Technical Tweaks",
                     "description": "Prevents in app photos from additionally being saved to Steam.",
+                    "flags": [
+                        "deprecated"
+                    ],
                     "name": "NoSteamScreenshots",
                     "platforms": [
                         "linux",
@@ -2364,7 +2516,7 @@
                 },
                 "owo.Nytra.WorldListSessionHider": {
                     "category": "Dashboard",
-                    "description": "A mod that hides session info and thumbnails in your session browser based on the host's userID/username or the sessionID.",
+                    "description": "A mod that hides session info and thumbnails in your session browser based on the host's userID/username, the world ID or the session ID.",
                     "name": "WorldListSessionHider",
                     "sourceLocation": "https://github.com/Nytra/ResoniteWorldListSessionHider",
                     "versions": {
@@ -2394,6 +2546,17 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Nytra/ResoniteWorldListSessionHider/releases/tag/v1.1.1"
+                        },
+                        "1.2.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "WorldListSessionHider.dll",
+                                    "sha256": "58d5be3e4782682ccd819991339a93c72cb53770de01070572c07d6d57b16b4b",
+                                    "url": "https://github.com/Nytra/ResoniteWorldListSessionHider/releases/download/v1.2.0/WorldListSessionHider.dll"
+                                }
+                            ],
+                            "changelog": "Added option to filter sessions out by world ID and improved config string parsing.",
+                            "releaseUrl": "https://github.com/Nytra/ResoniteWorldListSessionHider/releases/tag/v1.2.0"
                         }
                     }
                 }
