@@ -315,6 +315,21 @@
                                 }
                             },
                             "releaseUrl": "https://github.com/resonite-modding-group/ResoniteModLoader/releases/tag/2.6.0"
+                        },
+                        "3.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ResoniteModLoader.dll",
+                                    "sha256": "84150995e0cb9c54f1e2c8f4c169da31162bd8100b5c85354e9178261c116621",
+                                    "url": "https://github.com/resonite-modding-group/ResoniteModLoader/releases/download/3.0.0/ResoniteModLoader.dll"
+                                }
+                            ],
+                            "dependencies": {
+                                "net.pardeike.harmony": {
+                                    "version": "^2.3.3"
+                                }
+                            },
+                            "releaseUrl": "https://github.com/resonite-modding-group/ResoniteModLoader/releases/tag/3.0.0"
                         }
                     }
                 }
@@ -1245,6 +1260,16 @@
                             ],
                             "changelog": "Fixed the mod not working in the latest version",
                             "releaseUrl": "https://github.com/art0007i/ShowDelegates/releases/tag/2.2.7"
+                        },
+                        "2.2.8": {
+                            "artifacts": [
+                                {
+                                    "filename": "ShowDelegates.dll",
+                                    "sha256": "489ccc8326e7b5404be15d874da950772180b3a220bbebcd9cc555079e3041c7",
+                                    "url": "https://github.com/art0007i/ShowDelegates/releases/download/2.2.8/ShowDelegates.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/ShowDelegates/releases/tag/2.2.8"
                         }
                     }
                 },
@@ -1364,6 +1389,16 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/art0007i/ValueProxyExtensions/releases/tag/2.1.0"
+                        },
+                        "2.1.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "ValueProxyExtensions.dll",
+                                    "sha256": "be0e8f5f2c75775ad55a6ffd0a1f744973be9fff985fa2699988042d43ecab0c",
+                                    "url": "https://github.com/art0007i/ValueProxyExtensions/releases/download/2.1.1/ValueProxyExtensions.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/ValueProxyExtensions/releases/tag/2.1.1"
                         }
                     }
                 },
@@ -1962,6 +1997,17 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/pardeike/Harmony/releases/tag/v2.2.2.0"
+                        },
+                        "2.3.3": {
+                            "artifacts": [
+                                {
+                                    "filename": "0Harmony.dll",
+                                    "installLocation": "/rml_libs",
+                                    "sha256": "e96fc01100b6bbdc094b900efe47850cf97aa9df7c6a78cbe723b1decf5a506a",
+                                    "url": "https://github.com/resonite-modding-group/ResoniteModLoader/releases/download/3.0.0/0Harmony.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/pardeike/Harmony/releases/tag/v2.3.3.0"
                         }
                     },
                     "website": "https://harmony.pardeike.net/"
@@ -2424,6 +2470,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Nytra/ResoniteComponentSearchWizard/releases/tag/v1.1.3"
+                        },
+                        "1.1.4": {
+                            "artifacts": [
+                                {
+                                    "sha256": "0dfaf67a825eab9ba98a76f8ba6deba2a91a3ec93c30393b78ceb335a66f0e63",
+                                    "url": "https://github.com/Nytra/ResoniteComponentSearchWizard/releases/download/v1.1.4/ComponentSearchWizard.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteComponentSearchWizard/releases/tag/v1.1.4"
                         }
                     }
                 },
@@ -2576,6 +2631,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Nytra/ResoniteReferenceFinderWizard/releases/tag/v1.0.1"
+                        },
+                        "1.0.2": {
+                            "artifacts": [
+                                {
+                                    "sha256": "2bc3aed7d5afa10fe74f415d120fec71ed6f239fcb77c354d7c1af6a2537d216",
+                                    "url": "https://github.com/Nytra/ResoniteReferenceFinderWizard/releases/download/v1.0.2/ReferenceFinderWizard.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteReferenceFinderWizard/releases/tag/v1.0.2"
                         }
                     }
                 },
