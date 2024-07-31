@@ -131,6 +131,64 @@
                 }
             }
         },
+        "com.Kannya": {
+            "author": {
+                "Kannya": {
+                    "url": "https://github.com/KannyaResonite"
+                }
+            },
+            "entries": {
+                "com.Kannya.Console": {
+                    "category": "Misc",
+                    "description": "A simple but very useful console mod for RML and MonkeyLoader",
+                    "name": "Console",
+                    "platforms": [
+                        "windows"
+                    ],
+                    "sourceLocation": "https://github.com/KannyaResonite/Console",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "!Console.dll",
+                                    "sha256": "f2ba3f0b61664cfb07eff6cfbc04e5f996094a40760f93c08fa6d1e55a305c53",
+                                    "url": "https://github.com/KannyaResonite/Console/releases/download/1.0.0/Console.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/KannyaResonite/Console/releases/tag/1.0.0"
+                        },
+                        "1.0.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "!Console.dll",
+                                    "sha256": "fd1404863eb6525ee3e5fca0fa467f24b6ffc51200e6c88c8d42022e675e1584",
+                                    "url": "https://github.com/KannyaResonite/Console/releases/download/1.0.1/Console.dll"
+                                }
+                            ],
+                            "changelog": "Added proper MonkeyLoader support.",
+                            "releaseUrl": "https://github.com/KannyaResonite/Console/releases/tag/1.0.1"
+                        }
+                    }
+                },
+                "com.Kannya.FilesColours": {
+                    "category": "Dashboard",
+                    "description": "Simply colours your files in the files window on a per file category basis in Resonite. Configurable.",
+                    "name": "ColourMyFiles",
+                    "sourceLocation": "https://github.com/KannyaResonite/ColourMyFiles",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "f9caefeb706eb7c8c370c001f00961dc76500d7b318e858be60f293a0482b4a4",
+                                    "url": "https://github.com/KannyaResonite/ColourMyFiles/releases/download/1.0.0/ColourMyFiles.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/KannyaResonite/ColourMyFiles/releases/tag/1.0.0"
+                        }
+                    }
+                }
+            }
+        },
         "com.Sinduy": {
             "author": {
                 "Sinduy": {
@@ -767,6 +825,16 @@
                             ],
                             "changelog": "Fix for type management build",
                             "releaseUrl": "https://github.com/art0007i/CustomInspectors/releases/tag/2.1.3"
+                        },
+                        "2.1.4": {
+                            "artifacts": [
+                                {
+                                    "filename": "CustomInspectors.dll",
+                                    "sha256": "caceeab994bfec8aa7009c3c29deccf63763a25fbf3816588f51565fc2c32307",
+                                    "url": "https://github.com/art0007i/CustomInspectors/releases/download/2.1.4/CustomInspectors.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/CustomInspectors/releases/tag/2.1.4"
                         }
                     }
                 },
@@ -1260,6 +1328,9 @@
                 "me.art0007i.ShowComponentSlot": {
                     "category": "Inspectors",
                     "description": "Allows you to open the slot that a component is attached to in component inspectors",
+                    "flags": [
+                        "deprecated"
+                    ],
                     "name": "ShowComponentSlot",
                     "sourceLocation": "https://github.com/art0007i/ShowComponentSlot",
                     "versions": {
@@ -1526,6 +1597,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/BlueCyro/CherryPick/releases/tag/1.1.1"
+                        },
+                        "1.1.2": {
+                            "artifacts": [
+                                {
+                                    "sha256": "d47fefb81bebbe120c93d5f7cdc6a7a9006bc8ffbab08b5d125c86eb6b298dc2",
+                                    "url": "https://github.com/BlueCyro/CherryPick/releases/download/1.1.2/CherryPick.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/BlueCyro/CherryPick/releases/tag/1.1.2"
                         }
                     }
                 },
@@ -1543,6 +1623,23 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/BlueCyro/EffortlessEfficiency/releases/tag/1.0.0"
+                        }
+                    }
+                },
+                "net.Cyro.Outflow": {
+                    "category": "Optimization",
+                    "description": "Mitigate hitching when new users join a session you are hosting",
+                    "name": "Outflow",
+                    "sourceLocation": "https://github.com/BlueCyro/Outflow/",
+                    "versions": {
+                        "1.0.1": {
+                            "artifacts": [
+                                {
+                                    "sha256": "bf373d2a145e3ffb9683d3bf8395d86f90dceb1343521ba96f8001f8ceec07a4",
+                                    "url": "https://github.com/BlueCyro/Outflow/releases/download/1.0.1/Outflow.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/BlueCyro/Outflow/releases/tag/1.0.1"
                         }
                     }
                 }
@@ -1755,6 +1852,16 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/XDelta/ResoniteShowSourceLocation/releases/tag/1.1.2"
+                        },
+                        "1.2.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ShowSourceLocation.dll",
+                                    "sha256": "48c4f60b7728ce6624649866b28fca47a25ecb8acdeb9e748d8274d16be26e15",
+                                    "url": "https://github.com/XDelta/ResoniteShowSourceLocation/releases/download/1.2.0/ShowSourceLocation.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/XDelta/ResoniteShowSourceLocation/releases/tag/1.2.0"
                         }
                     }
                 }
@@ -2167,7 +2274,7 @@
                     }
                 },
                 "net.raidriar796.StresslessHeadless": {
-                    "category": "Technical Tweaks",
+                    "category": "Optimization",
                     "description": "Disables frequent and heavy calculations on certain components from running on Headless clients.",
                     "name": "StresslessHeadless",
                     "platforms": [
@@ -2194,6 +2301,24 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Raidriar796/StresslessHeadless/releases/tag/1.2.0"
+                        }
+                    }
+                },
+                "net.raidriar796.lognt": {
+                    "category": "Technical Tweaks",
+                    "description": "Allows for disabling all logs, warnings, and errors from being written to disk.",
+                    "name": "Lognt",
+                    "sourceLocation": "https://github.com/Raidriar796/Lognt",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "Lognt.dll",
+                                    "sha256": "1F69BE8F97EEBB89F7C86286E3540966D176F160AB3D91003C8DF9BB96C2F81A",
+                                    "url": "https://github.com/Raidriar796/Lognt/releases/download/1.0.0/Lognt.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Raidriar796/Lognt/releases/tag/1.0.0"
                         }
                     }
                 },
@@ -2226,6 +2351,16 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Raidriar796/yt-dlp-Updater/releases/tag/1.2.0"
+                        },
+                        "1.3.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ytdlpUpdater.dll",
+                                    "sha256": "2C00777F29F88E0B032239A55029944938592823523EC05CB8459F2D6BD742FE",
+                                    "url": "https://github.com/Raidriar796/yt-dlp-Updater/releases/download/1.3.0/ytdlpUpdater.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Raidriar796/yt-dlp-Updater/releases/tag/1.3.0"
                         }
                     }
                 }
