@@ -917,6 +917,9 @@
                 "me.art0007i.DisableLegacyInventory": {
                     "category": "Controls",
                     "description": "Disables the legacy inventory gesture, but it has a config option that can enable it again",
+                    "flags": [
+                        "deprecated"
+                    ],
                     "name": "DisableLegacyInventory",
                     "sourceLocation": "https://github.com/art0007i/DisableLegacyInventory",
                     "versions": {
@@ -983,6 +986,37 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/art0007i/FixGrabWorld/releases/tag/2.0.0"
+                        }
+                    }
+                },
+                "me.art0007i.ImGuiUnityInject": {
+                    "category": "Libraries",
+                    "description": "Edit of https://github.com/realgamessoftware/dear-imgui-unity to work with game modding",
+                    "name": "ImGuiUnityInject",
+                    "sourceLocation": "https://github.com/art0007i/ImGuiUnityInject",
+                    "versions": {
+                        "0.1.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "ImGuiUnityInject.dll",
+                                    "installLocation": "/rml_libs",
+                                    "sha256": "3c8735b22d05e6136c10a3132800084a4e42ed803b059bc2820c0ab8d4b4bfd9",
+                                    "url": "https://github.com/art0007i/ImGuiUnityInject/releases/download/0.1.1/ImGuiUnityInject.dll"
+                                },
+                                {
+                                    "filename": "cimgui-freetype.dll",
+                                    "installLocation": "/Resonite_Data/Plugins/x86_64",
+                                    "sha256": "e43759ef30a1c02fb0dec1dc232873fb576f6c6483de0c7a5e7e7157fad5cf10",
+                                    "url": "https://github.com/art0007i/ImGuiUnityInject/raw/d5c5ab8208bf4b6bd5f6dec0756573b85c1d0e61/Plugins/cimgui-freetype.dll"
+                                },
+                                {
+                                    "filename": "cimgui.dll",
+                                    "installLocation": "/Resonite_Data/Plugins/x86_64",
+                                    "sha256": "09bb9d5e23137e3b2ee681a1700a3a0f4bd847846368ede847a163f1f91e8560",
+                                    "url": "https://github.com/art0007i/ImGuiUnityInject/raw/d5c5ab8208bf4b6bd5f6dec0756573b85c1d0e61/Plugins/cimgui.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/ImGuiUnityInject/releases/tag/0.1.1"
                         }
                     }
                 },
@@ -1275,6 +1309,29 @@
                         }
                     }
                 },
+                "me.art0007i.ResoniteImGuiLib": {
+                    "category": "Libraries",
+                    "description": "A library which allows modders to use ImGuiUnityInject in resonite",
+                    "name": "ResoniteImGuiLib",
+                    "sourceLocation": "https://github.com/art0007i/ResoniteImGuiLib",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "ResoniteImGuiLib.dll",
+                                    "sha256": "531ad310a61df024569a6eb3c58b2e222f4dca0f8ad53e3003ad6a483aef1afd",
+                                    "url": "https://github.com/art0007i/ResoniteImGuiLib/releases/download/1.0.0/ResoniteImGuiLib.dll"
+                                }
+                            ],
+                            "dependencies": {
+                                "me.art0007i.ImGuiUnityInject": {
+                                    "version": "0.1.x"
+                                }
+                            },
+                            "releaseUrl": "https://github.com/art0007i/ResoniteImGuiLib/releases/tag/1.0.0"
+                        }
+                    }
+                },
                 "me.art0007i.SessionItemModal": {
                     "category": "Dashboard",
                     "description": "Allows opening modal dialogs for sessions seen in the contacts tab, by clicking the circle preview. This mod is quite jank but I still find it useful.",
@@ -1422,6 +1479,17 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/art0007i/ShowDriveSource/releases/tag/2.0.1"
+                        },
+                        "2.0.2": {
+                            "artifacts": [
+                                {
+                                    "filename": "ShowDriveSource.dll",
+                                    "sha256": "db7820f5070833f9987e608243139d841d3dcfc06444fa2aa4e42f88d91fe231",
+                                    "url": "https://github.com/art0007i/ShowDriveSource/releases/download/2.0.2/ShowDriveSource.dll"
+                                }
+                            ],
+                            "changelog": "Fix for new version",
+                            "releaseUrl": "https://github.com/art0007i/ShowDriveSource/releases/tag/2.0.2"
                         }
                     }
                 },
@@ -1880,6 +1948,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/XDelta/ResoniteShowSourceLocation/releases/tag/1.2.0"
+                        },
+                        "1.2.1": {
+                            "artifacts": [
+                                {
+                                    "sha256": "c4737956baa6dbc67e4d33f505af3018c20e30449c4ad1d7568e10b068e8732e",
+                                    "url": "https://github.com/XDelta/ResoniteShowSourceLocation/releases/download/1.2.1/ShowSourceLocation.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/XDelta/ResoniteShowSourceLocation/releases/tag/1.2.1"
                         }
                     }
                 }
@@ -2532,6 +2609,24 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/badhaloninja/ResoniteModSettings/releases/tag/v2.1.6"
+                        },
+                        "2.1.7": {
+                            "artifacts": [
+                                {
+                                    "sha256": "2e7d470f0ea82a7822cf35bf2a85030ec13547eae258902c1625089f6385d4c4",
+                                    "url": "https://github.com/badhaloninja/ResoniteModSettings/releases/download/v2.1.7/ResoniteModSettings.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/badhaloninja/ResoniteModSettings/releases/tag/v2.1.7"
+                        },
+                        "2.1.8": {
+                            "artifacts": [
+                                {
+                                    "sha256": "80c05d2b36c3aa26f2e8d022e65e3f75083127a83ae7a2f224707d8d67e95fc4",
+                                    "url": "https://github.com/badhaloninja/ResoniteModSettings/releases/download/v2.1.8/ResoniteModSettings.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/badhaloninja/ResoniteModSettings/releases/tag/v2.1.8"
                         }
                     }
                 },
@@ -2924,6 +3019,23 @@
                         }
                     }
                 },
+                "owo.Nytra.ScrollableFieldEditors": {
+                    "category": "Inspectors",
+                    "description": "Allows clicking into inspector fields and then scrolling to change the value.",
+                    "name": "ScrollableFieldEditors",
+                    "sourceLocation": "https://github.com/Nytra/ResoniteScrollableFieldEditors",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "2a2c1ca9740f52f20210313553cd5c41043fa8e0826880a994cffaac47c7144d",
+                                    "url": "https://github.com/Nytra/ResoniteScrollableFieldEditors/releases/download/v1.0.0/ScrollableFieldEditors.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteScrollableFieldEditors/releases/tag/v1.0.0"
+                        }
+                    }
+                },
                 "owo.Nytra.WorldListSessionHider": {
                     "category": "Dashboard",
                     "description": "A mod that hides session info and thumbnails in your session browser based on the host's userID/username, the world ID or the session ID.",
@@ -2967,6 +3079,32 @@
                             ],
                             "changelog": "Added option to filter sessions out by world ID and improved config string parsing.",
                             "releaseUrl": "https://github.com/Nytra/ResoniteWorldListSessionHider/releases/tag/v1.2.0"
+                        }
+                    }
+                }
+            }
+        },
+        "semmiedev": {
+            "author": {
+                "SemmieDev": {
+                    "url": "https://github.com/SemmieDev"
+                }
+            },
+            "entries": {
+                "semmiedev.NoDoubleTapSprint": {
+                    "category": "Controls",
+                    "description": "Disable double-tap sprinting when using a keyboard",
+                    "name": "NoDoubleTapSprint",
+                    "sourceLocation": "https://github.com/SemmieDev/NoDoubleTapSprint",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "b4410991d37bb2a6c675adaab18ea97c179b9b126dc5474ba3f1a64791931342",
+                                    "url": "https://github.com/SemmieDev/NoDoubleTapSprint/releases/download/v1.0.0/NoDoubleTapSprint.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/SemmieDev/NoDoubleTapSprint/releases/tag/v1.0.0"
                         }
                     }
                 }
