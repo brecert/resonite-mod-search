@@ -679,6 +679,46 @@
                 }
             }
         },
+        "lc.j4": {
+            "author": {
+                "Jae": {
+                    "url": "https://j4.lc"
+                }
+            },
+            "entries": {
+                "lc.j4.hdpromex": {
+                    "category": "Misc",
+                    "description": "Exports statistics formatted for Prometheus to a web endpoint.",
+                    "name": "Headless Prometheus Exporter",
+                    "platforms": [
+                        "headless"
+                    ],
+                    "sourceLocation": "https://g.j4.lc/general-stuff/resonite/headless-prometheus-exporter",
+                    "versions": {
+                        "1.2.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "HeadlessPrometheusExporter.dll",
+                                    "sha256": "477c0f45267851700a5afada8784406c6f0c448ecb6470d9f15c14c6d69ca184",
+                                    "url": "https://g.j4.lc/general-stuff/resonite/headless-prometheus-exporter/-/releases/1.2.0/downloads/HeadlessPrometheusExporter.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://g.j4.lc/general-stuff/resonite/headless-prometheus-exporter/-/releases/1.2.0"
+                        },
+                        "1.2.1": {
+                            "artifacts": [
+                                {
+                                    "filename": "HeadlessPrometheusExporter.dll",
+                                    "sha256": "ec69b67f314081276fcf1605837ad2bd10d43ee127ac7c8eecbb12f6053de306",
+                                    "url": "https://g.j4.lc/general-stuff/resonite/headless-prometheus-exporter/-/releases/1.2.1/downloads/HeadlessPrometheusExporter.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://g.j4.lc/general-stuff/resonite/headless-prometheus-exporter/-/releases/1.2.1"
+                        }
+                    }
+                }
+            }
+        },
         "me.art0007i": {
             "author": {
                 "art0007i": {
@@ -1234,6 +1274,24 @@
                         }
                     }
                 },
+                "me.art0007i.OutOfSightOverride": {
+                    "category": "Misc",
+                    "description": "Ignores the out of sight check on buttons",
+                    "name": "OutOfSightOverride",
+                    "sourceLocation": "https://github.com/art0007i/OutOfSightOverride",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "OutOfSightOverride.dll",
+                                    "sha256": "c7fef55525aa9bbcb96c42aa4271707497fd3f0466cb17f1bc1c37e907544c75",
+                                    "url": "https://github.com/art0007i/OutOfSightOverride/releases/download/1.0.0/OutOfSightOverride.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/OutOfSightOverride/releases/tag/1.0.0"
+                        }
+                    }
+                },
                 "me.art0007i.ParentalIssues": {
                     "category": "Memes",
                     "description": "Changes the default parent and child object names to be funnier",
@@ -1697,6 +1755,9 @@
                 "net.Cyro.Outflow": {
                     "category": "Optimization",
                     "description": "Mitigate hitching when new users join a session you are hosting",
+                    "flags": [
+                        "deprecated"
+                    ],
                     "name": "Outflow",
                     "sourceLocation": "https://github.com/BlueCyro/Outflow/",
                     "versions": {
@@ -1827,6 +1888,23 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/XDelta/LogAutoFlush/releases/tag/1.0.0"
+                        }
+                    }
+                },
+                "net.deltawolf.OpenInSteamOverlay": {
+                    "category": "Misc",
+                    "description": "Makes links open in the steam overlay instead of your default browser.",
+                    "name": "OpenInSteamOverlay",
+                    "sourceLocation": "https://github.com/XDelta/ResoniteOpenInSteamOverlay",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "4029af57b820ff056ee84ad312542ddd3caa3181fab77f094e1e5f15555fdd6b",
+                                    "url": "https://github.com/XDelta/ResoniteOpenInSteamOverlay/releases/download/1.0.0/OpenInSteamOverlay.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/XDelta/ResoniteOpenInSteamOverlay/releases/tag/1.0.0"
                         }
                     }
                 },
@@ -2509,6 +2587,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/rampa3/3DDashOnScreenResonite/releases/tag/3.6.0.0"
+                        },
+                        "3.6.1": {
+                            "artifacts": [
+                                {
+                                    "sha256": "28346faa13547a8ce4c63d7d52011d5d32814173393c44e11829d237765f114f",
+                                    "url": "https://github.com/rampa3/3DDashOnScreenResonite/releases/download/3.6.1.0/3DDashOnScreenResonite.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/rampa3/3DDashOnScreenResonite/releases/tag/3.6.1.0"
                         }
                     }
                 }
