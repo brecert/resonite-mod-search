@@ -324,6 +324,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Frozenreflex/Thundagun/releases/tag/1.1.1"
+                        },
+                        "1.2.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "cbb9e58c98ca2096e7128df4ec57ca8c4afd25f8af2ab81c10572ee6ad930d83",
+                                    "url": "https://github.com/Frozenreflex/Thundagun/releases/download/1.2.0/Thundagun.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Frozenreflex/Thundagun/releases/tag/1.2.0"
                         }
                     }
                 }
@@ -746,6 +755,16 @@
                                 }
                             ],
                             "releaseUrl": "https://g.j4.lc/general-stuff/resonite/headless-prometheus-exporter/-/releases/1.2.1"
+                        },
+                        "1.2.2": {
+                            "artifacts": [
+                                {
+                                    "filename": "HeadlessPrometheusExporter.dll",
+                                    "sha256": "bb12615a2e2d7e4d6084d3597d8faf3f3baa40191fc78f98e745f28bcb8c9c58",
+                                    "url": "https://g.j4.lc/general-stuff/resonite/headless-prometheus-exporter/-/releases/1.2.2/downloads/HeadlessPrometheusExporter.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://g.j4.lc/general-stuff/resonite/headless-prometheus-exporter/-/releases/1.2.2"
                         }
                     }
                 }
@@ -1161,6 +1180,24 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/art0007i/JustBoundedUIX/releases/tag/2.0.1"
+                        }
+                    }
+                },
+                "me.art0007i.KeyRepeatAdjust": {
+                    "category": "Controls",
+                    "description": "Allows you to change the key repeat rate for the vr keyboard",
+                    "name": "KeyRepeatAdjust",
+                    "sourceLocation": "https://github.com/art0007i/KeyRepeatAdjust",
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "filename": "KeyRepeatAdjust.dll",
+                                    "sha256": "d2798798f6cd185fbb782648190373b4b3ea986e06cf4ecbd67a8e19f808f41b",
+                                    "url": "https://github.com/art0007i/KeyRepeatAdjust/releases/download/1.0.0/KeyRepeatAdjust.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/art0007i/KeyRepeatAdjust/releases/tag/1.0.0"
                         }
                     }
                 },
@@ -3042,6 +3079,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Nytra/ResoniteColorMyProtoFlux/releases/tag/v1.1.0"
+                        },
+                        "1.2.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "ed6634fe79389e8d34b1ed1801d37804acc6146d702d612d2ed5f8618ccb214f",
+                                    "url": "https://github.com/Nytra/ResoniteColorMyProtoFlux/releases/download/v1.2.0/ColorMyProtoFlux.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteColorMyProtoFlux/releases/tag/v1.2.0"
                         }
                     }
                 },
