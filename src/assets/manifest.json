@@ -552,6 +552,51 @@
                 }
             }
         },
+        "com.TheJebForge": {
+            "author": {
+                "TheJebForge": {
+                    "icon": "https://github.com/TheJebForge.png",
+                    "url": "https://github.com/TheJebForge",
+                    "website": "https://thejebforge.com/"
+                }
+            },
+            "entries": {
+                "com.TheJebForge.BoneReferenceHelper": {
+                    "category": "Inspectors",
+                    "description": "Adds a lot of useful things for transferring bone references of skinned mesh renderers",
+                    "name": "BoneReferenceHelper",
+                    "sourceLocation": "https://github.com/TheJebForge/BoneReferenceHelper",
+                    "versions": {
+                        "2.0.5": {
+                            "artifacts": [
+                                {
+                                    "sha256": "203a14448c8b9fff31fee1b27c28e3cc139b660ed146854cff7696a31de8e861",
+                                    "url": "https://github.com/TheJebForge/BoneReferenceHelper/releases/download/v2.0.5/BoneReferenceHelper.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/TheJebForge/BoneReferenceHelper/releases/tag/v2.0.5"
+                        }
+                    }
+                },
+                "com.TheJebForge.DynVarGenerator": {
+                    "category": "Wizards",
+                    "description": "Adds a wizard to quickly generate huge amounts of dynamic fields/variables/drivers for slots, blend shapes, bones or anything else",
+                    "name": "DynVarGenerator",
+                    "sourceLocation": "https://github.com/TheJebForge/DynVarGenerator",
+                    "versions": {
+                        "1.3.4": {
+                            "artifacts": [
+                                {
+                                    "sha256": "837b436da5f72fe493fbd4ac12febbdc4ef1c0290315afca517e841efb7b8317",
+                                    "url": "https://github.com/TheJebForge/DynVarGenerator/releases/download/1.3.4/DynVarGenerator.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/TheJebForge/DynVarGenerator/releases/tag/1.3.4"
+                        }
+                    }
+                }
+            }
+        },
         "com.__Choco__": {
             "author": {
                 "__Choco__": {
@@ -1045,6 +1090,38 @@
                 }
             }
         },
+        "com.tabbynet": {
+            "author": {
+                "tabithamoon": {
+                    "url": "https://github.com/tabithamoon",
+                    "website": "https://tabby.page"
+                }
+            },
+            "entries": {
+                "com.tabbynet.ResonitePSVR2": {
+                    "category": "Hardware Integration",
+                    "description": "Enables support for special hardware features on the PlayStation VR2",
+                    "name": "ResonitePSVR2",
+                    "sourceLocation": "https://github.com/tabithamoon/ResonitePSVR2",
+                    "tags": [
+                        "psvr2",
+                        "eye",
+                        "tracking"
+                    ],
+                    "versions": {
+                        "1.0.1": {
+                            "artifacts": [
+                                {
+                                    "sha256": "58510374a69c30902c0351b07fcbec3d1c4d889906fc5098628fa48499625c7b",
+                                    "url": "https://github.com/tabithamoon/ResonitePSVR2/releases/download/v1.0.1/ResonitePSVR2.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/tabithamoon/ResonitePSVR2/releases/tag/v1.0.1"
+                        }
+                    }
+                }
+            }
+        },
         "com.ultrawidegamer": {
             "author": {
                 "ultrawidegamer": {
@@ -1067,6 +1144,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/ultrawidegamer/CustomTextureSettings/releases/tag/1.0.0"
+                        },
+                        "1.1.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "cb8194b7e2260f49bca97585c1cfcd426f70cbd440f2eecbaec3a3daa4a54a49",
+                                    "url": "https://github.com/ultrawidegamer/CustomTextureSettings/releases/download/1.1.0/CustomTextureSettings.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/ultrawidegamer/CustomTextureSettings/releases/tag/1.1.0"
                         }
                     }
                 }
@@ -3656,6 +3742,16 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/EIA485/NeosGetItemLink/releases/tag/1.4.5.0"
+                        },
+                        "1.4.6": {
+                            "artifacts": [
+                                {
+                                    "filename": "GetItemLink.dll",
+                                    "sha256": "ac32459d51e237577a4779f1c85d22af91e53b3bbd33511c3d9d4b6cebff246e",
+                                    "url": "https://github.com/EIA485/NeosGetItemLink/releases/download/1.4.6.0/GetItemLink.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/EIA485/NeosGetItemLink/releases/tag/1.4.6.0"
                         }
                     }
                 }
@@ -4111,6 +4207,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/rampa3/3DDashOnScreenResonite/releases/tag/3.6.1.0"
+                        },
+                        "3.6.2": {
+                            "artifacts": [
+                                {
+                                    "sha256": "1d0f645684cdb89c7840090d7d268538abf4a155302e7c7164b315de21636701",
+                                    "url": "https://github.com/rampa3/3DDashOnScreenResonite/releases/download/3.6.2.0/3DDashOnScreenResonite.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/rampa3/3DDashOnScreenResonite/releases/tag/3.6.2.0"
                         }
                     }
                 }
@@ -4231,6 +4336,30 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/badhaloninja/FixAltEnter/releases/tag/v2.0.0"
+                        }
+                    }
+                },
+                "ninja.badhalo.FixSelectionRadiusScale": {
+                    "category": "Misc",
+                    "description": "Makes the Developer Tool's selection radius dependent on scale, fixes issues selecting what you want when scaled down",
+                    "name": "FixSelectionRadiusScale",
+                    "sourceLocation": "https://github.com/badhaloninja/FixSelectionRadiusScale",
+                    "tags": [
+                        "dev",
+                        "developer",
+                        "tool",
+                        "select",
+                        "scale"
+                    ],
+                    "versions": {
+                        "1.0.0": {
+                            "artifacts": [
+                                {
+                                    "sha256": "b0c60f89aa653b26d954260b76fe847af72f5efdcc0148daff46e852b44a5b20",
+                                    "url": "https://github.com/badhaloninja/FixSelectionRadiusScale/releases/download/v1.0.0/FixSelectionRadiusScale.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/badhaloninja/FixSelectionRadiusScale/releases/tag/v1.0.0"
                         }
                     }
                 },
@@ -4583,6 +4712,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Zeitheron/VDFaceTracking/releases/tag/1.1.2"
+                        },
+                        "1.1.3": {
+                            "artifacts": [
+                                {
+                                    "sha256": "cb0b2856a27099b895bbb8c750c08bc345d12595f1400bd6e0b0166d81064650",
+                                    "url": "https://github.com/Zeitheron/VDFaceTracking/releases/download/1.1.3/VDFaceTracking.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Zeitheron/VDFaceTracking/releases/tag/1.1.3"
                         }
                     }
                 }
@@ -4667,6 +4805,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Nytra/ResoniteColorMyProtoFlux/releases/tag/v1.2.0"
+                        },
+                        "1.2.1": {
+                            "artifacts": [
+                                {
+                                    "sha256": "c5c4de1f10097132e763a4b316399b1220be9940213453b14e39910631da9904",
+                                    "url": "https://github.com/Nytra/ResoniteColorMyProtoFlux/releases/download/v1.2.1/ColorMyProtoFlux.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteColorMyProtoFlux/releases/tag/v1.2.1"
                         }
                     }
                 },
@@ -4870,6 +5017,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Nytra/ResoniteLogFlush/releases/tag/v1.1.0"
+                        },
+                        "1.1.1": {
+                            "artifacts": [
+                                {
+                                    "sha256": "02918b19775a27d04cedbf9f4b894770086c1c86bbd3b932eb3c0830b8ba563b",
+                                    "url": "https://github.com/Nytra/ResoniteLogFlush/releases/download/v1.1.1/LogFlush.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteLogFlush/releases/tag/v1.1.1"
                         }
                     }
                 },
@@ -4887,6 +5043,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Nytra/NoTankControls/releases/tag/v1.1.0"
+                        },
+                        "1.1.1": {
+                            "artifacts": [
+                                {
+                                    "sha256": "ab2831f1d882d4ef49c64d37e5ff872f1d681d655b985e5b7cab8deaa3636a68",
+                                    "url": "https://github.com/Nytra/NoTankControls/releases/download/v1.1.1/NoTankControls.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/NoTankControls/releases/tag/v1.1.1"
                         }
                     }
                 },
@@ -4939,6 +5104,15 @@
                                 }
                             ],
                             "releaseUrl": "https://github.com/Nytra/ResoniteScrollableFieldEditors/releases/tag/v1.0.0"
+                        },
+                        "1.0.1": {
+                            "artifacts": [
+                                {
+                                    "sha256": "8d820a9438c1f3c3fa01d7860b439532187378d6fded1a02e03bbc81492c0da4",
+                                    "url": "https://github.com/Nytra/ResoniteScrollableFieldEditors/releases/download/v1.0.1/ScrollableFieldEditors.dll"
+                                }
+                            ],
+                            "releaseUrl": "https://github.com/Nytra/ResoniteScrollableFieldEditors/releases/tag/v1.0.1"
                         }
                     }
                 },
