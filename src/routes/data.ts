@@ -1,5 +1,7 @@
-import manifest from "../assets/manifest.json";
 import { ModInfo } from "../components/ModInfo";
+import { ModManifest } from "../manifest/schema";
+
+const MANIFEST_URL = "https://raw.githubusercontent.com/resonite-modding-group/resonite-mod-manifest/refs/heads/main/manifest.json"
 
 function groupBy<T, K, V>(iter: Iterable<T>, fn: (item: T, i: number) => [K, V]): Map<K, V[]> {
 	const result: Map<K, V[]> = new Map()
@@ -12,6 +14,8 @@ function groupBy<T, K, V>(iter: Iterable<T>, fn: (item: T, i: number) => [K, V])
 
 	return result
 }
+
+const manifest: ModManifest = await fetch(MANIFEST_URL).then(res => res.json())
 
 export const mods: ModInfo[] = Object.values(manifest.objects).flatMap((object) => {
 	const authors = Object.entries(object.author).map(([name, info]) => ({

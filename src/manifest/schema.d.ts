@@ -1,96 +1,88 @@
-export type uri = string;
-
-export type Category =
-  | 'Asset Importing'
-  | 'Audio'
-  | 'Bug Workaround'
-  | 'Context Menu'
-  | 'Controls'
-  | 'Dashboard'
-  | 'Hardware Integration'
-  | 'Inspectors'
-  | 'Libraries'
-  | 'Memes'
-  | 'Misc'
-  | 'Optimization'
-  | 'Plugins'
-  | 'Protoflux'
-  | 'Technical Tweaks'
-  | 'Template'
-  | 'Visual Tweaks'
-  | 'Wizards'
-
-export type Platform =
-  | 'android'
-  | 'headless'
-  | 'linux'
-  | 'linux-native'
-  | 'linux-wine'
-  | 'windows'
-  | 'other'
-
-export type Flag =
-  | 'deprecated'
-  | 'plugin'
-  | 'file'
-
-export interface Manifest {
-  objects: { [namespace: string]: ManifestObject }
-  schemaVersion: string
-}
-
-export interface ManifestObject {
-  author: { [name: string]: Author },
-  entries: { [namespace: string]: Mod }
+export interface ModManifest {
+	objects: { [authorName: string]: AuthorEntry };
+	schemaVersion: string;
 }
 
 export interface Author {
-  url: uri
-  icon?: uri
-  website?: uri
-  support?: uri
+	icon?: string;
+	support?: string;
+	url: string;
+	website?: string;
 }
 
-export interface AuthorSchema {
-  author: Record<string, Author>
+export interface AuthorEntry {
+	author: Record<string, Author>;
+	entries: Record<string, Mod>;
 }
 
 export interface Mod {
-  additionalAuthors?: string[];
-  category: Category;
-  description: string;
-  flags?: Flag[];
-  // even though id is required in the manifest, there is none?
-  id: string;
-  name: string;
-  platforms?: Platform[];
-  sourceLocation?: string;
-  tags?: string[];
-  versions: Record<string, Version>;
-  website?: string;
+	additionalAuthors?: Record<string, Partial<Author>>;
+	category: Category;
+	description: string;
+	flags?: Flag[];
+	name: string;
+	platforms?: Platform[];
+	sourceLocation?: string;
+	tags?: string[];
+	versions: Record<string, Version>;
+	website?: string;
 }
 
+export type Category =
+	| "Asset Importing"
+	| "Audio"
+	| "Bug Workaround"
+	| "Context Menu"
+	| "Controls"
+	| "Dashboard"
+	| "Hardware Integration"
+	| "Inspectors"
+	| "Libraries"
+	| "Memes"
+	| "Misc"
+	| "Optimization"
+	| "Plugins"
+	| "Protoflux"
+	| "Technical Tweaks"
+	| "Template"
+	| "Visual Tweaks"
+	| "Wizards";
+
+export type Flag =
+	| "deprecated"
+	| "plugin"
+	| "file";
+
+export type Platform =
+	| "android"
+	| "headless"
+	| "linux"
+	| "linux-native"
+	| "linux-wine"
+	| "windows"
+	| "other";
+
 export interface Version {
-  artifacts: Artifact[];
-  changelog?: string;
-  conflicts?: Record<string, Conflict>;
-  dependencies?: Record<string, Dependency>;
-  releaseUrl?: string;
+	artifacts: Artifact[];
+	changelog?: string;
+	conflicts?: Record<string, Conflict>;
+	dependencies?: Record<string, Dependency>;
+	releaseUrl?: string;
 }
 
 export interface Artifact {
-  filename?: string;
-  installLocation?: string;
-  sha256: string;
-  url: string;
+	filename?: string;
+	installLocation?: string;
+	sha256: string;
+	url: string;
 }
 
 export interface Conflict {
-  version: string;
-  [property: string]: unknown;
+	version: string;
+	[property: string]: unknown;
 }
 
 export interface Dependency {
-  version: string;
-  [property: string]: unknown;
+	version: string;
+	[property: string]: unknown;
 }
