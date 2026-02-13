@@ -1,5 +1,5 @@
 import { Component, For, createMemo, createSignal } from "solid-js";
-import { CleanBreak, ModInfo } from "../components/ModInfo";
+import { ModInfo } from "../components/ModInfo";
 
 import "./root.css";
 import { categories, flags, mods, tags, SOURCE_URL } from "./data";
@@ -99,7 +99,7 @@ export const Root: Component = () => {
 	// none of this is needed, but I thought I'd have some fun
 	const _intBuf = new Uint32Array(1);
 	// technically not correct but it's funny
-	const randomFloat = (min: number, max: number) => min + crypto.getRandomValues(new Uint32Array(1))[0] * ((max - min) / 4294967295);
+	const randomFloat = (min: number, max: number) => min + crypto.getRandomValues(_intBuf)[0] * ((max - min) / 4294967295);
 	const randomInt = (min: number, max: number) => Math.round(randomFloat(min, max));
 	const sample = <T,>(array: T[]) => array[randomInt(0, array.length-1)]
 	function sampleWeighted<T>(array: [weight: number, T][]) {
