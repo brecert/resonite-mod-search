@@ -2,7 +2,8 @@ import { Component, For, createMemo, createSignal } from "solid-js";
 import { ModInfo } from "../components/ModInfo";
 
 import "./root.css";
-import { categories, mods } from "./data";
+import { categories, flagName, flags, mods, tags } from "./data";
+import { Flag } from "../manifest/schema";
 
 const searchIndex = mods.map((mod) => [
 	mod.namespace,
@@ -11,6 +12,7 @@ const searchIndex = mods.map((mod) => [
 		mod.info.category,
 		mod.info.description,
 		...(mod.info.tags ?? []),
+		...(mod.info.flags ?? []),
 		...(mod.info.platforms ?? []),
 		...mod.authors.map((author) => author.name),
 	].map((text) => text.toLocaleLowerCase()),
@@ -19,12 +21,28 @@ const searchIndex = mods.map((mod) => [
 // the search isn't really optimized but it's fine for now
 export const Root: Component = () => {
 	type Categories = Record<string, boolean>;
+	type Flags = Partial<Record<Flag, boolean>>;
+	type Tags = Record<string,	boolean>
 
 	const [searchText, setSearchText] = createSignal("");
 	const [searchCategories, setSearchCategories] = createSignal<Categories>({});
+	const [searchFlags, setSearchFlags] = createSignal<Flags>({});
+	const [searchTags, setSearchTags] = createSignal<Tags>({});
 
 	const enabledCategories = createMemo(() =>
 		Object.entries(searchCategories())
+			.filter((a) => a[1])
+			.map((a) => a[0])
+	);
+
+	const enabledFlags = createMemo(() =>
+		Object.entries(searchFlags())
+			.filter((a) => a[1])
+			.map((a) => a[0])
+	);
+
+	const enabledTags = createMemo(() =>
+		Object.entries(searchTags())
 			.filter((a) => a[1])
 			.map((a) => a[0])
 	);
@@ -36,12 +54,23 @@ export const Root: Component = () => {
 			.map((item) => item[0]);
 	});
 
+	// all of this is pretty inefficient, it's fine for now.
 	const filteredMods = createMemo(() => {
 		return mods
 			.filter(
 				(mod) =>
 					enabledCategories().length == 0 ||
 					enabledCategories().includes(mod.info.category)
+			)
+			.filter(
+				(mod) =>
+			 		(enabledFlags().length == 0 && !mod.info.flags?.includes("deprecated")) ||
+					mod.info.flags?.some(flag => enabledFlags().includes(flag))
+			)
+			.filter(
+				(mod) =>
+			 		enabledTags().length == 0 ||
+					mod.info.tags?.some(tag => enabledTags().includes(tag))
 			)
 			.filter((mod) => searchedMods().includes(mod.namespace));
 	});
@@ -50,6 +79,18 @@ export const Root: Component = () => {
 		setSearchCategories((categories) => ({
 			...categories,
 			[category]: state,
+		}));
+
+	const setFlag = (flag: string, state: boolean) =>
+		setSearchFlags((flags) => ({
+			...flags,
+			[flag]: state,
+		}));
+
+	const setTag = (tag: string, state: boolean) =>
+		setSearchTags((tags) => ({
+			...tags,
+			[tag]: state,
 		}));
 
 	return (
@@ -63,8 +104,8 @@ export const Root: Component = () => {
 						placeholder="Search..."
 					/>
 				</search>
-				<aside class="filters canvas">
-					<section class="vertical-layout">
+				<aside class="filters">
+					<section class="canvas vertical-layout">
 						<h3>Categories</h3>
 						<For each={[...categories.keys()]}>
 							{(category) => (
@@ -76,6 +117,38 @@ export const Root: Component = () => {
 										}
 									/>{" "}
 									{category}
+								</label>
+							)}
+						</For>
+					</section>
+					<section class="canvas vertical-layout">
+						<h3>Flags</h3>
+						<For each={[...flags.keys()]}>
+							{(flag) => (
+								<label>
+									<input
+										type="checkbox"
+										onChange={(e) =>
+											setFlag(flag, e.currentTarget.checked)
+										}
+									/>{" "}
+									{flagName(flag)}
+								</label>
+							)}
+						</For>
+					</section>
+					<section class="canvas vertical-layout">
+						<h3>Tags</h3>
+						<For each={[...tags.keys()]}>
+							{(tag) => (
+								<label>
+									<input
+										type="checkbox"
+										onChange={(e) =>
+											setTag(tag, e.currentTarget.checked)
+										}
+									/>{" "}
+									{tag}
 								</label>
 							)}
 						</For>

@@ -18,6 +18,9 @@
 
 	.filters {
 		grid-area: f;
+		display: flex;
+		flex-direction: column;
+		gap: var(--pad-full-step);
 	}
 
 	.ModList {
