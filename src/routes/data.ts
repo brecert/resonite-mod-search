@@ -46,11 +46,3 @@ export const mods: ModInfo[] = Object.values(manifest.objects).flatMap((object) 
 export const categories: Map<string, string[]> = groupBy(mods, mod => [mod.info.category, mod.namespace])
 export const flags: Map<Flag, string[]> = groupByFlat(mods, mod => mod.info.flags?.map(flag => [flag, mod.namespace]) ?? [])
 export const tags: Map<string, string[]> = groupByFlat(mods, mod => mod.info.tags?.map(tag => [tag, mod.namespace]) ?? [])
-
-const FlagNameMapping: Record<Flag, string> = {
-	"deprecated": "Deprecated",
-	"file": "File",
-	"plugin": "Plugin"
-}
-
-export const flagName = (flag: Flag): string => FlagNameMapping[flag]

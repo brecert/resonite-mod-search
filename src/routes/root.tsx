@@ -2,9 +2,9 @@ import { Component, For, createMemo, createSignal } from "solid-js";
 import { ModInfo } from "../components/ModInfo";
 
 import "./root.css";
-import { categories, flagName, flags, mods, tags } from "./data";
+import { categories, flags, mods, tags } from "./data";
 import { Flag } from "../manifest/schema";
-import { SidebarSection } from "./SidebarSection";
+import { SidebarSection } from "../components/SidebarSection";
 
 const searchIndex = mods.map((mod) => [
 	mod.namespace,

@@ -6,6 +6,7 @@ type Props = {
 	keys: string[];
 	onChange: (key: string, state: boolean) => { [x: string]: boolean; };
 };
+
 /* this isn't an ideal separation but it's fine for now. */
 export const SidebarSection: Component<Props> = ({ open, name, keys, onChange }) => <section class="canvas vertical-layout">
 	<details open={open}>
