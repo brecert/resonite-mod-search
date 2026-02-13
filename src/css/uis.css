@@ -69,7 +69,7 @@ label,
 .icon-label {
 	display: inline-flex;
 	align-items: center;
-	gap: 4px;
+	gap: var(--pad-half-step);
 	color: inherit;
 }
 

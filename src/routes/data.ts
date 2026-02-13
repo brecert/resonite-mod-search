@@ -1,6 +1,7 @@
 import { ModInfo } from "../components/ModInfo";
 import { Flag, ModManifest } from "../manifest/schema";
 
+export const SOURCE_URL = "https://github.com/brecert/resonite-mod-search"
 const MANIFEST_URL = "https://raw.githubusercontent.com/resonite-modding-group/resonite-mod-manifest/refs/heads/main/manifest.json"
 
 function groupBy<T, K, V>(iter: Iterable<T>, fn: (item: T, i: number) => [K, V]): Map<K, V[]> {

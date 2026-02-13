@@ -1,12 +1,27 @@
 .Main {
 	display: grid;
 	grid:
-		". s" auto
+		"h s" 49px
 		"f i" auto
 		". i" 1fr
 		/ 12.5em 1fr;
 
 	gap: var(--pad-full-step);
+
+	.header {
+		grid-area: h;
+
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		font-size: 0.75rem;
+		text-align: end;
+		white-space: nowrap;
+
+		h1 {
+			font-size: 1rem;
+		}
+	}
 
 	.search {
 		grid-area: s;
@@ -36,9 +51,21 @@
 @media (max-width: 660px) {
 	.Main {
 		grid:
+			"h" auto
 			"s" auto
 			"f" auto
 			"i" 1fr
 			/ 1fr;
+
+		.header {
+			align-items: start;
+			padding: 18px;
+			gap: 1px;
+			font-size: 1rem;
+
+			h1 {
+				font-size: 1.5rem;
+			}
+		}
 	}
 }
