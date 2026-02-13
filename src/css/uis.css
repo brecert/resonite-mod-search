@@ -184,6 +184,20 @@ dl.grid-layout {
 	}
 }
 
+details {
+	summary {
+		cursor: pointer;
+	}
+
+	summary :is(h1, h2, h3, h4, h5, h6) {
+		display: inline;
+	}
+
+	&[open] summary {
+		margin-block-end: var(--pad-full-step);
+	}
+}
+
 /* scuffed scope */
 :root {
 	.muted {

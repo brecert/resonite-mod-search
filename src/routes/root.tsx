@@ -4,6 +4,7 @@ import { ModInfo } from "../components/ModInfo";
 import "./root.css";
 import { categories, flagName, flags, mods, tags } from "./data";
 import { Flag } from "../manifest/schema";
+import { SidebarSection } from "./SidebarSection";
 
 const searchIndex = mods.map((mod) => [
 	mod.namespace,
@@ -105,54 +106,9 @@ export const Root: Component = () => {
 					/>
 				</search>
 				<aside class="filters">
-					<section class="canvas vertical-layout">
-						<h3>Categories</h3>
-						<For each={[...categories.keys()]}>
-							{(category) => (
-								<label>
-									<input
-										type="checkbox"
-										onChange={(e) =>
-											setCategory(category, e.currentTarget.checked)
-										}
-									/>{" "}
-									{category}
-								</label>
-							)}
-						</For>
-					</section>
-					<section class="canvas vertical-layout">
-						<h3>Flags</h3>
-						<For each={[...flags.keys()]}>
-							{(flag) => (
-								<label>
-									<input
-										type="checkbox"
-										onChange={(e) =>
-											setFlag(flag, e.currentTarget.checked)
-										}
-									/>{" "}
-									{flagName(flag)}
-								</label>
-							)}
-						</For>
-					</section>
-					<section class="canvas vertical-layout">
-						<h3>Tags</h3>
-						<For each={[...tags.keys()]}>
-							{(tag) => (
-								<label>
-									<input
-										type="checkbox"
-										onChange={(e) =>
-											setTag(tag, e.currentTarget.checked)
-										}
-									/>{" "}
-									{tag}
-								</label>
-							)}
-						</For>
-					</section>
+					<SidebarSection name="Categories" keys={[...categories.keys()]} onChange={setCategory} open={true} />
+					<SidebarSection name="Flags" keys={[...flags.keys()]} onChange={setFlag}	/>
+					<SidebarSection name="Tags" keys={[...tags.keys()]} onChange={setTag} />
 				</aside>
 				<ul class="ModList vertical-layout">
 					<For each={filteredMods()}>
